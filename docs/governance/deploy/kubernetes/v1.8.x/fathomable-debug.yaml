@@ -1,0 +1,142 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cyvive
+  namespace: kube-system
+  labels:
+    cyvive: cyvive
+spec:
+  selector:
+    cyvive: cyvive
+  ports:
+    - name: api
+      port: 3000
+      targetPort: 3000
+  sessionAffinity: None
+---
+kind: ServiceAccount
+apiVersion: v1
+metadata:
+  name: cyvive
+  namespace: kube-system
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: cyvive
+  namespace: kube-system
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cluster-admin
+subjects:
+  - kind: ServiceAccount
+    name: cyvive
+    namespace: kube-system
+---
+kind: Deployment
+apiVersion: apps/v1beta2
+metadata:
+  name: cyvive
+  namespace: kube-system
+  labels:
+    cyvive: cyvive
+spec:
+  strategy:
+    type: Recreate
+  minReadySeconds: 10
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      cyvive: cyvive
+  template:
+    metadata:
+      labels:
+        cyvive: cyvive
+    spec:
+      terminationGracePeriodSeconds: 10
+      serviceAccount: cyvive
+      securityContext:
+        #runAsNonRoot: true
+      volumes:
+        - name: cyvive-config
+          configMap:
+            name: mandatory-cyvive-database
+      containers:
+        - name: cyvive
+          image: gcr.io/taylored-technology/cyvive:debug
+          command: ["sleep", "200000"]
+          volumeMounts:
+            - name: cyvive-config
+              mountPath: /opt/deploy
+          imagePullPolicy: Always
+          env:
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  apiVersion: v1
+                  fieldPath: metadata.name
+            - name: POD_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  apiVersion: v1
+                  fieldPath: metadata.namespace
+            - name: POD_IP
+              valueFrom:
+                fieldRef:
+                  apiVersion: v1
+                  fieldPath: status.podIP
+            - name: CLUSTER
+              value: minikube
+            - name: FQDN_BASE
+              value: 'somewhere.co'
+            - name: INGRESS_NGINX
+              value: 'true'
+            - name: AUTHENTICATOR
+              value: 'amqk ef5z fvrn gp6q p7dg pq6g pncu ww7l'
+            - name: DISABLE_ExTERNAL_VALIDATION
+              value: 'true'
+            - name: DEBUG
+              value: '*,-follow-redirects'
+          readinessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /health/ready
+              port: 3000
+              scheme: HTTP
+            initialDelaySeconds: 10
+            periodSeconds: 30
+            successThreshold: 1
+            timeoutSeconds: 1
+---
+kind: Deployment
+apiVersion: extensions/v1beta1
+metadata:
+  name: cyvive-httpie
+  namespace: kube-system
+  labels:
+    cyvive: httpie
+spec:
+  strategy:
+    type: Recreate
+  minReadySeconds: 1
+  revisionHistoryLimit: 0
+  template:
+    metadata:
+      labels:
+        cyvive: httpie
+    spec:
+      terminationGracePeriodSeconds: 5
+      serviceAccount: cyvive
+      containers:
+        - name: httpie
+          image: clue/httpie
+          command: ["sleep", "200000"]
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mandatory-cyvive-database
+  namespace: kube-system
+data:
+  db.json: '{}'

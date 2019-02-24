@@ -1,0 +1,54 @@
+site_name: Cyvive
+site_descripiton: Immutable Change
+site_author: cyvive.io
+site_url: https://www.cyvive.io
+
+copyright: '&copy; Taylored Technology 2018-Current'
+theme:
+  name: 'material'
+  language: 'en'
+  palette:
+    primary: 'blue grey'
+    accent: 'lime'
+  logo: 'images/logo.png'
+  favicon: 'images/favicon.ico'
+  feature:
+    tabs: true
+extra:
+  search:
+    language: 'en'
+  manifest: 'manifest.webmanifest'
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - meta
+
+pages:
+  - 'About': 
+    - 'Cyvive': 'index.md'
+    - 'Platform': 'platform/index.md'
+    - 'EcoSystem': 'ecosystem/index.md'
+    - 'Governance': 'governance/index.md'
+  - 'Platform':
+    - 'Understanding': 'platform/index.md'
+  - 'EcoSystem':
+    - 'Understanding': 'ecosystem/index.md'
+  - 'Governance':
+    - 'Understanding': 'governance/index.md'
+    - 'Usage':
+      - 'Developer': 'governance/usage/developer.md'
+      - 'Govenor': 'governance/usage/govenor.md'
+    - 'Configuration':
+      - 'Service': 'governance/configuration/index.md'
+      - 'Application': 'governance/configuration/index.md'
+      - 'Component': 'governance/configuration/index.md'
+      - 'Groups': 'governance/configuration/groups.md'
+      - 'Templates': 'governance/configuration/templates.md'
+  - 'Blog':
+    - 'itstarts': 'blog/itstarts.md'
+
+
+

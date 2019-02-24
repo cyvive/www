@@ -1,0 +1,8 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mandatory-cyvive-database
+  namespace: kube-system
+data:
+  db.json: '{}'
