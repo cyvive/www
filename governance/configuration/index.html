@@ -1,0 +1,1465 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+        <link rel="canonical" href="https://www.cyvive.io/governance/configuration/">
+      
+      
+        <meta name="author" content="cyvive.io">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
+    
+    
+      
+        <title>Component - Cyvive</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+      <link rel="manifest" href="../../manifest.webmanifest">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="lime">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#application-service-yaml" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.cyvive.io" title="Cyvive" class="md-header-nav__button md-logo">
+          
+            <img src="../../images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Cyvive
+            </span>
+            <span class="md-header-nav__topic">
+              Component
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../.." title="About" class="md-tabs__link">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../platform/" title="Platform" class="md-tabs__link">
+          Platform
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../ecosystem/" title="EcoSystem" class="md-tabs__link">
+          EcoSystem
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../" title="Governance" class="md-tabs__link md-tabs__link--active">
+          Governance
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../blog/itstarts.md" title="Blog" class="md-tabs__link">
+          Blog
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://www.cyvive.io" title="Cyvive" class="md-nav__button md-logo">
+      
+        <img src="../../images/logo.png" width="48" height="48">
+      
+    </a>
+    Cyvive
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Cyvive" class="md-nav__link">
+      Cyvive
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../platform/" title="Platform" class="md-nav__link">
+      Platform
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ecosystem/" title="EcoSystem" class="md-nav__link">
+      EcoSystem
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Governance" class="md-nav__link">
+      Governance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Platform
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Platform
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../platform/" title="Understanding" class="md-nav__link">
+      Understanding
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      EcoSystem
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        EcoSystem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../ecosystem/" title="Understanding" class="md-nav__link">
+      Understanding
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Governance
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Governance
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../" title="Understanding" class="md-nav__link">
+      Understanding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Usage
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Usage
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../usage/developer/" title="Developer" class="md-nav__link">
+      Developer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../usage/govenor/" title="Govenor" class="md-nav__link">
+      Govenor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="./" title="Service" class="md-nav__link">
+      Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="./" title="Application" class="md-nav__link">
+      Application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Component
+      </label>
+    
+    <a href="./" title="Component" class="md-nav__link md-nav__link--active">
+      Component
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding" title="Understanding" class="md-nav__link">
+    Understanding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#absolute-minimum-file-structure" title="Absolute Minimum File Structure" class="md-nav__link">
+    Absolute Minimum File Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-service-inheritence-structure" title="Application / Service Inheritence Structure" class="md-nav__link">
+    Application / Service Inheritence Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-level-configuration-technology-descriptor" title="Group Level Configuration / Technology Descriptor" class="md-nav__link">
+    Group Level Configuration / Technology Descriptor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-service-technology-descriptor" title="Application / Service Technology Descriptor" class="md-nav__link">
+    Application / Service Technology Descriptor
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#availability" title="availability" class="md-nav__link">
+    availability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circuitbreaker" title="circuitBreaker" class="md-nav__link">
+    circuitBreaker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commandlineinterface" title="commandLineInterface" class="md-nav__link">
+    commandLineInterface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component" title="component" class="md-nav__link">
+    component
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daemon" title="daemon" class="md-nav__link">
+    daemon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint" title="endpoint" class="md-nav__link">
+    endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment" title="environment" class="md-nav__link">
+    environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardwired" title="hardWired" class="md-nav__link">
+    hardWired
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label" title="label" class="md-nav__link">
+    label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer" title="layer" class="md-nav__link">
+    layer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repository" title="repository" class="md-nav__link">
+    repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource" title="resource" class="md-nav__link">
+    resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security" title="security" class="md-nav__link">
+    security
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stateful" title="stateful" class="md-nav__link">
+    stateful
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version" title="version" class="md-nav__link">
+    version
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="groups/" title="Groups" class="md-nav__link">
+      Groups
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Blog
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Blog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../blog/itstarts.md" title="itstarts" class="md-nav__link">
+      itstarts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#understanding" title="Understanding" class="md-nav__link">
+    Understanding
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#absolute-minimum-file-structure" title="Absolute Minimum File Structure" class="md-nav__link">
+    Absolute Minimum File Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-service-inheritence-structure" title="Application / Service Inheritence Structure" class="md-nav__link">
+    Application / Service Inheritence Structure
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#group-level-configuration-technology-descriptor" title="Group Level Configuration / Technology Descriptor" class="md-nav__link">
+    Group Level Configuration / Technology Descriptor
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#application-service-technology-descriptor" title="Application / Service Technology Descriptor" class="md-nav__link">
+    Application / Service Technology Descriptor
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#availability" title="availability" class="md-nav__link">
+    availability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#circuitbreaker" title="circuitBreaker" class="md-nav__link">
+    circuitBreaker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#commandlineinterface" title="commandLineInterface" class="md-nav__link">
+    commandLineInterface
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#component" title="component" class="md-nav__link">
+    component
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#daemon" title="daemon" class="md-nav__link">
+    daemon
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint" title="endpoint" class="md-nav__link">
+    endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment" title="environment" class="md-nav__link">
+    environment
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hardwired" title="hardWired" class="md-nav__link">
+    hardWired
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#label" title="label" class="md-nav__link">
+    label
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#layer" title="layer" class="md-nav__link">
+    layer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repository" title="repository" class="md-nav__link">
+    repository
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resource" title="resource" class="md-nav__link">
+    resource
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security" title="security" class="md-nav__link">
+    security
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stateful" title="stateful" class="md-nav__link">
+    stateful
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version" title="version" class="md-nav__link">
+    version
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="application-service-yaml">Application / Service YAML<a class="headerlink" href="#application-service-yaml" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This functionality was originally offered by the parent company as a separate product <strong>Fathomable</strong>. It is undergoing consolidation into <strong>Cyvive</strong>'s core and is restricted to <em>beta</em> customers at this time. Please contact your account manager via live-chat should you wish to participate.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info<ul>
+<li><strong>Scope:</strong> <em>App / Service Specific</em></li>
+<li><strong>File:</strong> <code>cyvive.yaml</code></li>
+<li><strong>Location:</strong> <em>Application / Service Repository</em> / <em>CI/CD Pushed</em></li>
+</ul>
+</p>
+</div>
+<h2 id="understanding">Understanding<a class="headerlink" href="#understanding" title="Permanent link">&para;</a></h2>
+<p>… core meta component for governance. This file describes the specific application / service's governance policy to be extracted and implemented on demand in the cluster orchestration infrastructure.</p>
+<p>While <em>Cyvive.io</em> doesn't mandate a specific adoption approach, a truely minimal configuration file is achieved through following industry best practices for structure and oragnisation.</p>
+<p><em>Cyvive.io</em>'s configuration language is architecturally and contexturally derived from over 35 specifilized industry and academic works for providing a governance via policy meta-model that agnostically interfaces with the most complex orchestration technology while articulately able to be used in conversation.</p>
+<p><em>This file is a powerhouse behind agnostic infrastructure, and provides the most simple abstraction of deployment available today.</em></p>
+<h2 id="absolute-minimum-file-structure">Absolute Minimum File Structure<a class="headerlink" href="#absolute-minimum-file-structure" title="Permanent link">&para;</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note<p>'⇛' character is used throughout this documentation where items are mandatory with respect to the parent YAML key. If not specified, then item is optional.</p>
+</p>
+</div>
+<div class="codehilite"><pre><span></span>exampleGroup:
+⇛ exampleApp:
+⇛   version: &#39;v1.8.x&#39;
+</pre></div>
+
+
+<p>… this minimum structure is all that is necessary for <em>Cyvive.io</em> to commence governance and interface with the orchestration technology at a minimum level.</p>
+<p>If <em>Cyvive.io</em> was then used to govern this application / service in a <em>deploymentTarget</em> called 'preproduction' using the <em>template</em> 'perf' against <em>Kubernetes</em> as a orchestrator the following would happen:</p>
+<ul>
+<li>a <code>Deployment</code> would be created using the image: exampleGroup/exampleApp:v1.8.x</li>
+<li>a <code>Service</code> would be created mapping port 80 to the <code>Deployment</code></li>
+<li>a <em>DNS</em> entry would be created in the cluster as <code>exampleApp.exampleGroup.preproduction.svc.cluster.local</code></li>
+<li>any other applications governed by <em>Cyvive.io</em>'s and allowed to be deployed against this <em>template</em> would also be deployed following an automated dependency order.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note<p>SemVer is rapidly becoming the version management approach of choice for development as it balances the needs of devoplers and continous container deployment well while maintaining business requirements for release management and change requests.</p>
+</p>
+</div>
+<h2 id="application-service-inheritence-structure">Application / Service Inheritence Structure<a class="headerlink" href="#application-service-inheritence-structure" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>exampleGroup:
+⇛ exampleApp:
+        component: &#39;identifier&#39;
+⇛   version: &#39;vTag&#39;
+</pre></div>
+
+
+<p>… the typical structure used in a governance model would provide <code>components</code>, <code>applications</code>, <code>groups</code> as units of categorization. <em>Cyvive.io</em> inherits this concept where typically <code>groups</code> would be a higher level <em>Business Unit</em> or <em>Service</em> containing <em>MicroServices</em> and depending on the complexity of the higher level <code>group</code> service <code>components</code> (also often refered to as <code>CloudFunctions</code> or <code>NanoServices</code>)</p>
+<p>The exact definition and demarkation of <code>groups</code> is left to the client, but by default when requesting a <em>container</em> from the <em>container repository</em> the format will be as such: <code>exampleGroup/exampleApp-component:vTag</code> naturally lending to the following organisation use-cases:</p>
+<ul>
+<li><strong>Business Unit Separation</strong> every logical business unit has a collection of apps that interface with other parts of the business / consumer.</li>
+<li><strong>Service Oriented Architecture</strong> where a collection of microservices are combined to form a logical unit. i.e. Frontend (Browser), Backend (API), DataBase</li>
+</ul>
+<p>As such its possible to use <em>Cyvive.io</em> with any level of complexity in application releationships, while keeping isolation and deployment in a layered security approach.</p>
+<h2 id="group-level-configuration-technology-descriptor">Group Level Configuration / Technology Descriptor<a class="headerlink" href="#group-level-configuration-technology-descriptor" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>exampleGroup
+    exampleApp: {}
+    group: {}
+</pre></div>
+
+
+<p>… is available for all groups under governance. Where applicable identical specifications at the <code>group</code> level override the <code>template</code> level. Its not necessary for <code>group</code> information to be specified as a pre-requisite to adding a Service / Application / Component to a non-existent group.</p>
+<p>It is possible Service / Application / Component to inherit configuration information from the <code>group</code> level, thus allowing enhanced security over a traditional deployment model, where keys can be present in the application environment and unknown to developers with Service / Application / Component source code access.</p>
+<p>Additional information on the <code>group</code> Technology Descriptors is <a href="groups/">available</a></p>
+<h2 id="application-service-technology-descriptor">Application / Service Technology Descriptor<a class="headerlink" href="#application-service-technology-descriptor" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>exampleGroup
+  exampleApp:
+        availability: {}
+        circuitBreaker: {}
+        commandLineInterface: {}
+        component: string
+        daemon: boolean
+        endpoint: {}
+        environment: {}
+        label: {}
+        layer: string
+        repository: {}
+        resource: {}
+        security: {}
+        stateful: {}
+        version: {}
+</pre></div>
+
+
+<p>… illustrates a high level overview of the logical configuration sections. Detailed information is located under each subheading below. Where values for keys are shown they are the default values.</p>
+<h3 id="availability">availability<a class="headerlink" href="#availability" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+    exampleApp:
+        availability:
+            gracePeriod:
+                boot: 1
+                stability: 0
+                termination: 5
+            minimum: 1
+            maximum: 2
+            probe:
+                health:
+                    interval: 10
+                    path: &#39;/&#39;
+                    port: 80
+                ready:
+                    interval: 5
+                    path: &#39;/&#39;
+                    port: 80
+                timeout: 1
+            scalingEvent: {}
+</pre></div>
+
+
+<ul>
+<li><code>gracePeriod</code>: minimum time in seconds to wait for events to occur<ul>
+<li><code>boot</code>: Service / Application / Component &amp; operating system startup boot time, this should be the minimum time before a health check endpoint is available to process a request.</li>
+<li><code>stability</code>: amount of time to wait for the health check endpoint to ensure consistent returns after boot time has been completed. This is typically used in legacy applications that need to stabilize their upstream and downstream communications when started or have large amounts of data to sync.</li>
+<li><code>termination</code>: is the maximum amount of time to wait before hard terminating the container operating system. It does not guarantee the Service / Application / Component will have or take this long to terminate, its just the maximum amount of time to wait for the signal from the Operating System to ensure its okay to terminate. (Note: the termination signal is sent immediately to all container processes, this is the period before the kill signal is sent)</li>
+</ul>
+</li>
+<li><code>minimum</code>: guaranteed minimum number of replicas to always be deployed in the <em>deploymentTarget</em></li>
+<li><code>maximum</code>: when scaling ensure that this number is not exceeded</li>
+<li><code>probes</code>: notify the underlying orchestrator of Service / Application / Component status. Where <code>health</code> is actual health, and <code>ready</code> is ability to recieve traffic<ul>
+<li><code>interval</code>: time in seconds for checking endpoint</li>
+<li><code>path</code>: endpoint path relative to container</li>
+<li><code>port</code>: internal port the probe endpoint is listening on</li>
+<li><code>timeout</code>: this option is not nested under each probe as failures are being monitored for, its expected that timeout values should apply to all check related endpoints equally.</li>
+</ul>
+</li>
+<li><code>scalingEvent</code>: is a passthrough object of trigger events to integrate with orchestration support in triggering scaling up and down of the replicas.</li>
+</ul>
+<p><strong>Note:</strong> With respect to deployment timeouts, <strong>Cyvive.io</strong>'s standard approach is to stall deployments as failed if the Service / Application / Component takes fails to enter <code>ready</code> state using one of the following timelines in order of priority rounded to the nearest second:</p>
+<ol>
+<li><strong>probe.ready</strong> specified: <code>(gracePeriod.boot + gracePeriod.stability + (probe.ready.interval * 2)) * 3.3</code></li>
+<li><strong>probe.health</strong> specified: <code>(gracePeriod.boot + gracePeriod.stability + probe.health.interval) * 3.3</code></li>
+<li><strong>gracePeriod.stability</strong>: <code>(gracePeriod.boot + gracePeriod.stability + 10) * 3.3</code></li>
+<li><strong>gracePeriod.boot</strong>: <code>(gracePeriod.boot + 10) * 3.3</code></li>
+<li><strong>default settings</strong>: <code>33</code> seconds</li>
+</ol>
+<p>As seen above 10% buffer is applied to times to ensure container schedulling / restarting via the orchestrator doesn't introduce false-positives</p>
+<h3 id="circuitbreaker">circuitBreaker<a class="headerlink" href="#circuitbreaker" title="Permanent link">&para;</a></h3>
+<p><em>available to closed beta customers</em></p>
+<h3 id="commandlineinterface">commandLineInterface<a class="headerlink" href="#commandlineinterface" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+    exampleApp:
+        commandLineInterface:
+            argument: []
+            command: &#39;&#39;
+</pre></div>
+
+
+<p>… is an override path for container start commands. While most startups will embed the start command and respective arguments in the container image itself, efficient governance exposes all configuration, execution and dependency information. As such the organisation can choose to embed startup information in the container or expose via governance layer.</p>
+<ul>
+<li><code>argument</code>: standard cli arguments for execution. e.g. ['--list', '--debug']</li>
+<li><code>command</code>: root command to execute when starting the container. e.g. '/usr/local/bin/command' should this not be specified then the default command the container was built with will be executed.</li>
+</ul>
+<h3 id="component">component<a class="headerlink" href="#component" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+    exampleApp:
+        component: &#39;&#39;
+</pre></div>
+
+
+<p>… provides a namespace separation for <code>components</code>. Typically used when the Service / Application would need to be logicaly broken down further than just Business Unit / Group to Service / Application</p>
+<h3 id="daemon">daemon<a class="headerlink" href="#daemon" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+    exampleApp:
+        daemon: false
+</pre></div>
+
+
+<p>… upgrades the Service / Application / Component to run as a <em>Daemon</em> in the <em>deploymentTarget</em>. This ensures that every physical node executing a Service / Application / Component belonging to this group will have this <em>Daemon</em> available locally.</p>
+<h3 id="endpoint">endpoint<a class="headerlink" href="#endpoint" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+  exampleApp:
+    endpoint:
+            domain: {}
+            port: 80
+            provide: [&#39;/&#39;]
+            scheme: &#39;https&#39;
+            require: {}
+</pre></div>
+
+
+<p>… are created for every Service / Application / Component by default and register DNS via the following schema: <code>component-appName.groupName.deploymentTarget.domain</code></p>
+<ul>
+<li><code>port</code>: open port for inbound interaction.</li>
+<li><code>provide</code>: <strong>important</strong> for correct dependency management the <code>provide</code> endpoints are the registration points for Service / Application / Component searching in generating the deployment graph.</li>
+<li><code>scheme</code>: extensible against the scheme definitions in RFC standards, the key types are <em>http</em> and <em>https</em> where specifying https will cause auto-creation of SSL certificates at the cluster ingress point.</li>
+</ul>
+<p><strong>Exploring the complex root keys:</strong></p>
+<div class="codehilite"><pre><span></span>domain:
+    &#39;xyz.com&#39;: [&#39;DEVLIKE&#39;, &#39;HALIKE&#39;, &#39;PRODLIKE&#39;]
+    &#39;testing.co&#39;: [&#39;DEVLIKE&#39;]
+</pre></div>
+
+
+<p>The <code>domain</code> object is structured as follows:
+- <code>key</code>: the domain name to expose against. This should be the Fully Qualified Domain Name (<em>FQDN</em>) as autogenerated DNS structure applies inside the cluster only.
+- <code>value</code>: array of <code>operatingEnvironment</code>'s valid for exposing against. Exposure follows the schema mentioned previously, however it can be overridden as necessary</p>
+<div class="codehilite"><pre><span></span>require:
+  - &#39;redux.exampleGroup:443/api/v1/ending&#39;: [&#39;incoming&#39;]
+  - &#39;exampleApp.exampleGroup:80/v1/&#39;: [&#39;incoming&#39;, &#39;outgoing&#39;]
+  - &#39;162.0.5.2:8080/&#39;: [&#39;outgoing&#39;]
+</pre></div>
+
+
+<p>The <code>require</code> object is quite important. It identifies all dependencies this Service / Application / Component has and helps contribute to the deployment order when creating a <em>deploymentTarget</em>. In the event a <code>require</code> is not registered with <strong>Cyvive.io</strong> it will be considered external to the cluster and <strong>assumed</strong> to already exist.</p>
+<p>A useful note is that different versions of the same Service / Application / Component can be consumed by other eachother. This is achieved via the <code>version</code> key where each governance technology descriptor registers against the Service / Application / Component version.</p>
+<p>The <code>require</code> object is structured as follows:
+- <code>key</code>: Uniform Resource Identifier (URI) <a href="https://www.ietf.org/rfc/rfc3986.txt">RFC 3986</a> compliant. The scheme is unnecessary as any routing restrictions
+- <code>value</code>: traffic direction for filewall / security registration</p>
+<h3 id="environment">environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+  exampleApp:
+    environment:
+            file:
+                config: {}
+                secret: {}
+            variable: {}
+</pre></div>
+
+
+<p>… all items are directly exposed to the Service / Application / Component.</p>
+<p><strong>Exploring the complex root keys:</strong></p>
+<div class="codehilite"><pre><span></span>files:
+    config:
+        &#39;alpha&#39;:
+            mountPath: &#39;/alpha&#39;
+            data:
+                - name: configDetail
+                    value: &#39;string of information&#39;
+    &#39;delta&#39;:
+      inheritGroup: false
+</pre></div>
+
+
+<p>Each item in <code>config</code> is a representation of a <em>ConfigMap</em> with individual items specified in the array object under <code>data</code>. Each item represents an individual file. <code>mountPath</code> is the directory location in the container that the <em>ConfigMap</em> should be mounted to.</p>
+<p>If <code>inheritGroup</code> is provided the configuration will be loaded from the group settings enabling a more 'global' oriented view of configuration</p>
+<div class="codehilite"><pre><span></span>files:
+    secrets:
+        &#39;secretname&#39;:
+            type: &#39;opaque&#39;
+            mountPath: &#39;/secret-location&#39;
+            data:
+                - name: secretInfo
+                    value: (base64 string)
+        &#39;anothersecret&#39;:
+            inheritGroup: false
+</pre></div>
+
+
+<p>Each item in <code>secrets</code> is a map with individual items under <code>data</code> representing files to be mounted into the <code>mountPath</code> location in the container.</p>
+<p>If <code>inheritGroup</code> is provided the secret will be loaded from the group settings enabling a more 'global' oriented view of configuration</p>
+<div class="codehilite"><pre><span></span>variable:
+    &#39;exposeName&#39;: &#39;exposeValue&#39;
+</pre></div>
+
+
+<p>Direct mapping of the <code>key</code> to <code>value</code> provided as an environmental variable when executing the container start command.</p>
+<p>Additionally <strong>Cyvive.io</strong> exposes some helper variables to identify the current context of the Service / Application / Component:</p>
+<ul>
+<li><code>SELF_NAME</code>: name of the Service / Application / Component. This will also be the <code>hostname</code> of the running container</li>
+<li><code>SELF_NAME_LOADBALANCER</code>: to assist in discovery, this is the LoadBalancer endpoint for incluster communication to this container and its replicas. This is relative to the deploymentTarget and not the Fully Qualified Domain Name (FQDN)</li>
+<li><code>SELF_DEPLOYMENTTARGET</code>: <em>deploymentTarget</em> that the Service / Application / Component has been deployed into</li>
+<li><code>SELF_IP</code>: the internal cluster IP of the container</li>
+</ul>
+<p>The following self-explanatory variables are also available to the container when specified via <strong>Cyvive.io</strong>'s governance:</p>
+<ul>
+<li><code>SELF_MIN_MEMORY</code></li>
+<li><code>SELF_MIN_CPU</code></li>
+<li><code>SELF_MAX_MEMORY</code></li>
+<li><code>SELF_MAX_CPU</code></li>
+</ul>
+<h3 id="hardwired">hardWired<a class="headerlink" href="#hardwired" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+    exampleApp:
+        hardWired:
+            clusterDNS: &#39;&#39;
+</pre></div>
+
+
+<p>… is a catch-all for compatibility with non-governed processes. <em>It is strongly recommended not to use these keys unless absolutely necessary</em> as each key will disable some governance functionality and introduce independent manual management scenarios that wouldn't normally be necessary.</p>
+<ul>
+<li><code>clusterDNS</code>: is a hard overwrite of the cluster internal load balancer endpoint for the Service / Application / Component. It disables the autogeneration capabilities and can help with initially migrating non Cloud Native items.</li>
+</ul>
+<h3 id="label">label<a class="headerlink" href="#label" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+  exampleApp:
+    label:
+      # app:                autocompleted ~ appName
+            # component:    autocompleted ~ component
+      # release:        autocompleted in PRODLIKE environments ~ canary or stable
+      # tier:               autocompleted ~ groupName
+            # version:      autocompleted ~ version key
+      {any others you require}
+</pre></div>
+
+
+<p>Any labels not specified above can be used to help identify the applications &amp; services. As the aforeentioned labels are reserved by <strong>Cyvive.io</strong> for governance, any custom values provided will be ignored as they are used for asset tracking</p>
+<p>Although there is nothing stopping its use, the recommended approach is not to use <em>hotfix</em> as a label or <em>blue</em> / <em>green</em> for deploys as when running Services / Application / Components en masse at scale, <em>canary</em> has been observed repeatedly as a more stable; reduced risk; and governable approach as everything passes through a 'canary' state anyway. (Under candidate based releases hotfixes are just releases that have been accelerated through the canary phase)</p>
+<p>There is no limit to how many labels can be specified</p>
+<h3 id="layer">layer<a class="headerlink" href="#layer" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+    exampleApp:
+        layer: &#39;base&#39;
+</pre></div>
+
+
+<p>… is a concept often used in Enterprise Architecture and earlier microservices. <strong>Cyvive.io</strong> underwent an extreemly careful active engagement process with its users prior to introducing this key.</p>
+<p>The layer concept is used as part of the dependency graph generation process. Prioritizing and guaranteeing deployments of each layer prior to commencing the next, failing fast when any layer fails to deploy.</p>
+<p><strong>Layers in Order</strong>
+1. data
+2. communication
+3. cache
+4. backend
+5. frontend</p>
+<p>While strictly not necessary to specify, if known the <code>layer</code> should be specified as it allows for accelerated parallel deployment in the desired <em>deploymentTarget</em></p>
+<h3 id="repository">repository<a class="headerlink" href="#repository" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup
+  exampleApp:
+        repository:
+            image:
+              domain: &#39;hub.docker.io&#39;
+                name: &#39;exampleRedux&#39;
+                officialImage: false
+            owner: &#39;exampleRedux&#39;
+</pre></div>
+
+
+<p>… image registry autogenerated name uses the format: <code>repository/owner/name</code> as such the default without <code>image</code> specified would be <code>hub.docker.io/exampleGroup/exampleApp</code>.</p>
+<p>This can be overriden to anything you need in any combination using the following values:</p>
+<ul>
+<li><code>domain</code>: overrides <code>group</code> or <code>template</code> <code>domain</code> settings</li>
+<li><code>name</code>: overrides <code>exampleApp</code> in the sample. This impacts deployed application name &amp; container image repository url generation.</li>
+<li><code>officialImage</code>: is a structureal specification for <em>DockerHub</em> where official images have a different retrieval structure. Setting this as true would result in <em>exampleApp</em> being the official image name or if provided <code>name</code> would still override to be the official image name.</li>
+<li><code>owner</code>: override for owner in technology descriptor</li>
+</ul>
+<h3 id="resource">resource<a class="headerlink" href="#resource" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+  exampleApp:
+    resource:
+      max:
+        cpu: 500
+        memory: 1Gi
+      min:
+        cpu: 300
+        memory: 1Gi
+      qos: &#39;&#39;
+</pre></div>
+
+
+<p>… allocation is an important part of all container orchestration schedullers, and these values should be provided prior to deploying Service / Application / Component to <code>production</code> <em>deploymentTarget</em> although, if not specified <strong>Cyvive.io</strong> will operate without issue.</p>
+<ul>
+<li><code>max</code> absolute maximum requirements that we are prepared to allocate.</li>
+<li><code>min</code> minimum required in order to guarantee application boot and ready for traffic interaction.</li>
+</ul>
+<p><code>qos</code> is <strong>mandatory</strong> should <code>min</code> or <code>max</code> be specified</p>
+<p>If neither <code>min</code> or <code>max</code> are specified then <code>template</code> defaults (if specified) will be used. The ability to provide <code>template</code> resource defaults is to ensure safe co-habitation of Services / Applications / Components when / if they go rogue.</p>
+<p><code>cpu</code> is units of CPU core specified in 'm' thus for a single CPU core <em>1000</em> should be used. The 'm' is omitted and should not be specified.
+<code>memory</code> should always have the multiplier specified as part of the value i.e. 'Gi' any suitable value can be specified from the following: <code>Ki Mi Gi Ti Pi Ei</code>
+<code>qos</code> follows the approach:</p>
+<ul>
+<li><strong>guaranteed</strong>: highest possible level, everything not this level will suffer 'pause' events to ensure these pods continue to operate.</li>
+<li><strong>burstable</strong>: <em>default</em> <code>min</code> values are allocated to the pod as minimum required to run. No upper limits are placed on resources.</li>
+<li><strong>effort</strong>: can be used when the application is lowest priority of them all. <code>min</code>, <code>max</code> and <code>namespace default</code> values are totally ignored. (Currently un-implemented due to lack of user demand)</li>
+</ul>
+<h3 id="security">security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h3>
+<p><em>available to closed beta customers</em></p>
+<div class="codehilite"><pre><span></span>exampleGroup:
+    exampleApp:
+        security:
+            account:
+                name: alternativeOne
+          reference: admin
+</pre></div>
+
+
+<ul>
+<li><code>account</code>: should an account be required that isn't the group security account or 'default' i.e. another group's account. It can be overriden here. <em>Specifying will create the account if it doesn't exist</em></li>
+</ul>
+<h3 id="stateful">stateful<a class="headerlink" href="#stateful" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+    exampleApp
+        stateful:
+            cloudNative: false
+            databaseName: &#39;&#39;
+            individualServices: false
+            replica: 3
+            sharedStorage: false
+            volume:
+                &#39;avolume&#39;:
+                    mountPath: &#39;/avolume&#39;
+                    size: &#39;10Gi&#39;
+                    storageClass: &#39;&#39;
+</pre></div>
+
+
+<ul>
+<li><code>cloudNative</code>: Enables the ability to deploy stateful applications in parallel and will automatically compact number of replicas down in envionments that aren't 'HALIKE' or 'PRODLIKE' to save resources.</li>
+<li><code>databaseName</code>: standard application naming will be applied if this field is omitted. Its frequently used in custom templates for configuring some of the expected internals</li>
+<li><code>individualServices</code>: some applications can operate under a common service endpoint, others such as MongoDB require fixed service endpoints for each database</li>
+<li><code>replica</code>: number of PODS that should be deployed, if the backend supports it anti-affinity rules will already be in place per Availablility Zone and Host.</li>
+<li><code>sharedStorage</code>: determines if the PODS should have mount the same storage or have unique storage per pod (<strong>warhing</strong> multi-mount storage is unsupported by most storage drivers)</li>
+<li><code>storageClass</code>: the type of storage strategy that should be applied</li>
+</ul>
+<p>In providing a consistent minimal configuration the <code>stateful</code> configuration integrates with <code>endpoint</code> and it should be used for accessing accordingly</p>
+<p>Amount of time that should be given after sending <em>kill</em> signal to the container OS before terminating and removing the container.</p>
+<h3 id="version">version<a class="headerlink" href="#version" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleGroup:
+  exampleApp:
+    version: &#39;latest&#39;
+</pre></div>
+
+
+<p>… standards and application is a constantly debated aproach with different internal standards used within organizations. Internally <strong>Cyvive.io</strong> maintains governance versions based on this <code>key</code> and <code>value</code>. For effective governance of infrastructure in cloud native approaches Semantic Versioning <a href="https://semver.org/">SemVer</a> is sanest choice.</p>
+<p><strong>Cyvive.io</strong>'s integration with SemVer only tracks <code>major</code> <code>minor</code> <code>patch</code> the <em>extensions format</em> is stripped off for tracking purposes.</p>
+<p>If its necessary to modify governance information, then the SevVer should be incremented to prevent cross-contamination of prior governed assets.</p>
+<p>Container images when using SemVer are <em>not</em> re-pulled from the image repository each time as they should be immuntable.</p>
+<p>static labels i.e. <code>latest</code> can also be used with the understanding that configuration changes will be applied to all future <em>deploymentTarget</em> and container images will be re-pulled every time.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="./" title="Application" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Application
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="groups/" title="Groups" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Groups
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; Taylored Technology 2018-Current
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.b806dc00.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+    
+  </body>
+</html>

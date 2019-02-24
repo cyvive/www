@@ -1,0 +1,920 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Cloud Agnostic Operation & Governance Platform">
+      
+      
+        <link rel="canonical" href="https://www.cyvive.io/">
+      
+      
+        <meta name="author" content="cyvive.io">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.0.1">
+    
+    
+      
+        <title>Cyvive</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/application.982221ab.css">
+      
+        <link rel="stylesheet" href="assets/stylesheets/application-palette.224b79ff.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="assets/javascripts/modernizr.1f0bcf2b.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    
+      <link rel="manifest" href="manifest.webmanifest">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="lime">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#60-second-overview" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="https://www.cyvive.io" title="Cyvive" class="md-header-nav__button md-logo">
+          
+            <img src="images/logo.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            Cyvive
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+        
+
+  
+
+<nav class="md-tabs md-tabs--active" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="." title="About" class="md-tabs__link md-tabs__link--active">
+          About
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="platform/" title="Platform" class="md-tabs__link">
+          Platform
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="ecosystem/" title="EcoSystem" class="md-tabs__link">
+          EcoSystem
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="governance/" title="Governance" class="md-tabs__link">
+          Governance
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="blog/itstarts.md" title="Blog" class="md-tabs__link">
+          Blog
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="https://www.cyvive.io" title="Cyvive" class="md-nav__button md-logo">
+      
+        <img src="images/logo.png" width="48" height="48">
+      
+    </a>
+    Cyvive
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1" checked>
+    
+    <label class="md-nav__link" for="nav-1">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Cyvive
+      </label>
+    
+    <a href="." title="Cyvive" class="md-nav__link md-nav__link--active">
+      Cyvive
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#60-second-overview" title="60 Second Overview" class="md-nav__link">
+    60 Second Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why" title="Why?" class="md-nav__link">
+    Why?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what" title="What?" class="md-nav__link">
+    What?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operational-platform" title="Operational Platform" class="md-nav__link">
+    Operational Platform
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecosystem" title="EcoSystem" class="md-nav__link">
+    EcoSystem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance" title="Governance" class="md-nav__link">
+    Governance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-agnostic" title="Cloud Agnostic" class="md-nav__link">
+    Cloud Agnostic
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how" title="How?" class="md-nav__link">
+    How?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where" title="Where?" class="md-nav__link">
+    Where?
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="platform/" title="Platform" class="md-nav__link">
+      Platform
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="ecosystem/" title="EcoSystem" class="md-nav__link">
+      EcoSystem
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="governance/" title="Governance" class="md-nav__link">
+      Governance
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Platform
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Platform
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="platform/" title="Understanding" class="md-nav__link">
+      Understanding
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      EcoSystem
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        EcoSystem
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="ecosystem/" title="Understanding" class="md-nav__link">
+      Understanding
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Governance
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Governance
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="governance/" title="Understanding" class="md-nav__link">
+      Understanding
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Usage
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        Usage
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="governance/usage/developer/" title="Developer" class="md-nav__link">
+      Developer
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="governance/usage/govenor/" title="Govenor" class="md-nav__link">
+      Govenor
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="governance/configuration/" title="Service" class="md-nav__link">
+      Service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="governance/configuration/" title="Application" class="md-nav__link">
+      Application
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="governance/configuration/" title="Component" class="md-nav__link">
+      Component
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="governance/configuration/groups/" title="Groups" class="md-nav__link">
+      Groups
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="governance/configuration/templates/" title="Templates" class="md-nav__link">
+      Templates
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Blog
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Blog
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="blog/itstarts.md" title="itstarts" class="md-nav__link">
+      itstarts
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#60-second-overview" title="60 Second Overview" class="md-nav__link">
+    60 Second Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why" title="Why?" class="md-nav__link">
+    Why?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what" title="What?" class="md-nav__link">
+    What?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#operational-platform" title="Operational Platform" class="md-nav__link">
+    Operational Platform
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ecosystem" title="EcoSystem" class="md-nav__link">
+    EcoSystem
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#governance" title="Governance" class="md-nav__link">
+    Governance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-agnostic" title="Cloud Agnostic" class="md-nav__link">
+    Cloud Agnostic
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how" title="How?" class="md-nav__link">
+    How?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where" title="Where?" class="md-nav__link">
+    Where?
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Cyvive</h1>
+                
+                <h2 id="60-second-overview">60 Second Overview<a class="headerlink" href="#60-second-overview" title="Permanent link">&para;</a></h2>
+<p><video width="100%" controls muted autoplay>
+   <source src="https://res.cloudinary.com/tayloredtechnology/video/upload/v1535790141/cyvive.io/video/teaser.mp4" type="video/mp4; codecs=hevc">
+   <source src="https://res.cloudinary.com/tayloredtechnology/video/upload/v1535790141/cyvive.io/video/teaser.mp4" type="video/webm; codecs=vp9">
+   <source src="https://res.cloudinary.com/tayloredtechnology/video/upload/v1535790141/cyvive.io/video/teaser.mp4" type="video/mp4">
+</video></p>
+<h2 id="why">Why?<a class="headerlink" href="#why" title="Permanent link">&para;</a></h2>
+<p>The modern Information Technology Development Approach is based on <strong>Speed, Scale &amp; Margin</strong>. As a result organizations of all sizes are embracing the <strong>Cloud Native</strong> approach to designing, building and running applications based on Infrastructure-as-a-Service (IaaS) in combination with operational tools and services such as Continous Integration (CI), Continous Deployment (CD), Containers, and Orchestrators. </p>
+<p>To execute <strong>Cloud Native</strong> five layers are required:</p>
+<ol>
+<li>Infrastructure (Bare Metal / Cloud)</li>
+<li>Provisioning</li>
+<li>Runtme</li>
+<li>Orchestration &amp; Management</li>
+<li>Application Definition / Development</li>
+</ol>
+<p>This simplistic layering opens a world of choices, when combined with the reality that some tools in one layer work better with specific tools than others, a complex exponential selection process is established.</p>
+<p>There is a strong market need for simplicity, sanity and control of the n+1 choices available when using <strong>Cloud Native</strong> architecture.</p>
+<h2 id="what">What?<a class="headerlink" href="#what" title="Permanent link">&para;</a></h2>
+<p>Cyvive provides <strong>Immutable Change</strong>, from the instrastructure through to moment in time understanding of deployed applications. Everything is Immutable. This means your business, or parts of it can be reproduced, moved or upgraded safely. This <strong>Immutable Change</strong> is provided through two key approaches:</p>
+<h3 id="operational-platform">Operational Platform<a class="headerlink" href="#operational-platform" title="Permanent link">&para;</a></h3>
+<p>Infrastructure-as-a-Service, expects the cloud service provider to deliver infrastructure components that would otherwise exist in an on-premises data center. These components could consist of servers, storage and networking as well as the virtualization layer, which the IaaS provider hosts in its own data center. While they may also provide Platform-as-a-Service (PaaS) offerings such as cloud functions, container execution api's, or even Kubernetes variations. By design, they are not turn-key offerings.</p>
+<p><strong>Cyvive</strong>, however, is. As an operational platform, it directly interfaces with the cloud provider (or Bare Metal) of choice using the provides IaaS interactions to provision an immutable collection of components necessary to run the orchestrator of choice. The default being Kubernetes</p>
+<h3 id="ecosystem">EcoSystem<a class="headerlink" href="#ecosystem" title="Permanent link">&para;</a></h3>
+<p><strong>Cloud Native</strong> requires a collection of tools, or an extended ecosystem of services to understand and, unlock and leverage its full potential. Each tool, when selected by companies typically goes through a process, that takes months for an efficient team with multitudes of Proof of Concepts, each potentially causing <em>back to the drawing board moments</em>. The modern company doesn't have the luxury of time to assess, stabilize and incrementally add each component of the <strong>Cloud Native</strong> ecosystem while guaranteeing stability amongst change management in their Digital Transformation journey.</p>
+<p><strong>Cyvive</strong> takes the best in breed tool for each part of the EcoSystem and manages its lifecycle. Choices are available between Open Source or Propriatory where possible. Such careful selection and management of the Best in Breed Candidates of the EcoSystem unlocks the power of the Orchestrator to perform often significantly beyond its standard capabilities</p>
+<h3 id="governance">Governance<a class="headerlink" href="#governance" title="Permanent link">&para;</a></h3>
+<p>MicroServices are a suite of applications providing a specific function. They are also a key part of <strong>Cloud Native</strong> architecture, and while there are many benefits to adopting this model over alternatives such as OSIMM / TOSCA. Orchestration &amp; Management alone is insufficient and inefficient to managing complex deployments as each has independent release cycles.</p>
+<p>The defacto approach to MicroServices is to run them within a container, in most situations, even the <em>functions / serverless</em> approach ultimately runs within a container. As such to actually execute the code, open source and propriatory libraries (which are regularly updated) are aggregated into the container, where to comply with security and zero day vulnerability patching must be updated regularly.</p>
+<p>Ironically, 50 MicroServices are often the tipping point for unmanagable complexity. 50 MicroServices can have a maximum of 1225 interactions, versions, and dependencies between eachother. It is also a realistic expectation that at least one of the Open Source libraries used in each MicroService will need to be updated, tested and validated as production safe. Once every couple of days, or potentially 700 redeploys a month.</p>
+<p>While the Continous Integration System may validate the code is safe, by nature MicroServices require Continous Deployment / Promotion through environmental complexity to <em>proove</em> they are production stable. </p>
+<p>MicroServices also have their own independent dependency graph, so actual deployments may not be as simple as replacing a single service in isolation each time.</p>
+<p><strong>Cyvive</strong>, as the Premier MicroService Governance solution, streamlines all complexities through dynamic dependency graphs, an industry standard configuration &amp; communication syntax, release management, configuration and version management for MicroServices through to Infrastructure. </p>
+<p>Any part of your infrastructure can be deployed on-demand, with all relevant dependent services, in any environment.</p>
+<h3 id="cloud-agnostic">Cloud Agnostic<a class="headerlink" href="#cloud-agnostic" title="Permanent link">&para;</a></h3>
+<p>It is no longer a realistic expectation that companies can enhance their technology stack by partnering with a single cloud provider. With the growing multitude of high quality cloud providers, each offering niche tools a multi-cloud strategy is a necessity.</p>
+<p><strong>Cyvive</strong>'s detailed Governance and Operational Capabilities allow rapid movement of workloads between cloud providers at an unprecidented scale. It is now a realistic expectation that every hour your entire company can be migrated between clouds based on lowest instance pricing. Without disruption of service.</p>
+<h2 id="how">How?<a class="headerlink" href="#how" title="Permanent link">&para;</a></h2>
+<p>We worked with 3 Universities, and over 35 industry publications to analyse trends and approaches to modelling, scaling, interacting and managing MicroService deployents at diabolical scale. The result is the core configuration language of <strong>Cyvive</strong>, a direct extension of natural descriptive language used in companies today.</p>
+<p>We also cross partnered to understand and explore each part of the <strong>Cloud Native</strong> EcoSystem to architect and craft a well-balanced blend of services capable of supporting over 2,500 nodes with 500 containers each. (Yes, Cyvive has been applied to managing over 1 million containers) </p>
+<p>We pushed <em>immutability</em> down to the operating system, every machine self registers, and is managed exclusively by <strong>Cyvive</strong>. There is no human access available to the actual machine. Making <strong>Cyvive</strong> inaccessible to human error.</p>
+<p>While <strong>Cyvive</strong> is orchestrator independent, it has been actively used with Kubernetes since version 1.6.x (March 2017)</p>
+<p>Finally, we selected Terraform for cloud provider &amp; bare metal interactions. Properly tuned, full <em>immutable</em> lifecyle management was possible while leveraging all the important functionalities of major cloud providers.</p>
+<h2 id="where">Where?<a class="headerlink" href="#where" title="Permanent link">&para;</a></h2>
+<ul>
+<li>All Major Public Clouds</li>
+<li>AMD64 / ARM64 Chipsets</li>
+<li>Bare Metal (<strong>Cyvive</strong> creates its own cloud on metal)</li>
+</ul>
+<p><strong>Cyvive</strong>: The Premier Cloud Agnostic Operation &amp; Governance Platform</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+        
+          <a href="platform/" title="Platform" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Platform
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            &copy; Taylored Technology 2018-Current
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="assets/javascripts/application.b806dc00.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"."}})</script>
+      
+    
+  </body>
+</html>
