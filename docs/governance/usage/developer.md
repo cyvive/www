@@ -5,15 +5,15 @@
 
 ## Governance Overview
 
-_Cyvive.io_ is a [Layer 4 - 7 OSIMM Compliant](http://www.opengroup.org/soa/source-book/osimmv2/p2.htm) and as such implements a _Governance via Policy_ approach through YAML configuration files created per application / service / component.
+_Cyvive.io_ is Cloud Native & [Layer 4 - 7 OSIMM Compliant](http://www.opengroup.org/soa/source-book/osimmv2/p2.htm) and as such implements a _Governance via Policy_ approach through YAML configuration files created per Micro/NanoService.
 
-The language used in configuration description is not arbritary, and is the culmination of 35 respected academic and industry studies with _containerization_ viewpoint spanning from MicroServices Architecture through to Enteprise Architecture principles.
+The language used in configuration description is not arbritary, and is architecturally and contexturally derived from partnership with 3 Universities and over 35 industry publications with _containerization_ viewpoint spanning from MicroServices Architecture through to Enteprise Architecture principles.
 
 The configuration approach is powerful enough to handle governance of any type of application in the modern technology stack including 'cloud functions' while being flexible enough to be used in ordinary conversation between teams, departments and vendors.
 
 A detailed explanation of the configuration options is [available](../configuration/index.md)
 
-## Enabling Governance of your Service / Application / Component
+## Enabling Governance of your Micro/NanoService
 
 … is accomplished via a POST call to _Cyvive.io_. If running via the provided 'httpie' container
 ```
@@ -23,7 +23,7 @@ YAML as a string can also be provided if required under the technologyDescriptor
 
 Governance assets are automatically versioned based on the `version` parameter
 
-## Deploying a Governed Service / Application / Component
+## Deploying a Governed Micro/NanoService
 
 … is also done via POST call. If running via the provided 'httpie' container
 ```
@@ -43,7 +43,7 @@ Briefly expanding the parameters:
 http DELETE cyvive:3000/namespace/development
 ```
 
-## Purging a Service / Application / Component from Governance
+## Purging a Micro/NanoService from Governance
 
 … accomplished via standard DELETE call. If running via the provided 'httpie' container
 ```

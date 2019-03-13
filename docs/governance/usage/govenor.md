@@ -5,24 +5,24 @@
 
 ## Governance Overview
 
-_Cyvive.io_ is a [Layer 4 - 7 OSIMM Compliant](http://www.opengroup.org/soa/source-book/osimmv2/p2.htm) and as such implements a _Governance via Policy_ approach through YAML configuration files created per application / service / component.
+_Cyvive.io_ is Cloud Native & [Layer 4 - 7 OSIMM Compliant](http://www.opengroup.org/soa/source-book/osimmv2/p2.htm) and as such implements a _Governance via Policy_ approach through YAML configuration files created per Micro/NanoService.
 
-The language used in configuration description is not arbritary, and is the culmination of 35 respected academic and industry studies with _containerization_ viewpoint spanning from MicroServices Architecture through to Enteprise Architecture principles.
+The language used in configuration description is not arbritary, and is architecturally and contexturally derived from partnership with 3 Universities and over 35 industry publications with _containerization_ viewpoint spanning from MicroServices Architecture through to Enteprise Architecture principles.
 
 The configuration approach is powerful enough to handle governance of any type of application in the modern technology stack including 'cloud functions' while being flexible enough to be used in ordinary conversation between teams, departments and vendors.
 
 A detailed explanation of the configuration options is [available](../configuration/index.md)
 
-## Service / Application / Component Overview
+## Micro/NanoService Overview
 
 … is best described through the [Usage for Developers](./developer.md) quickstart.
 
 ## Governance Inheritence Tree
 
-… is a Don't Repeat Yourself (**DRY**) approach efficiently utilized in Service Oriented Infrastructure (**SOI**). As such configuration follows an inheritance path ovelaying prior configuration settings where necessary.
+… is a Don't Repeat Yourself (**DRY**) approach. As such configuration follows an inheritance path overlaying prior configuration settings where necessary.
 
 _Overrides:_
-**template** ⇛ **group** ⇛ **service / application / component**
+**template** ⇛ **suite** ⇛ **micro/nanoservice**
 
 The use of this inheritance model also allows a segregation of security concerns where naturally authorized individuals interact with the correct Governance layers for enterprise and whole company management of Services.
 
@@ -83,11 +83,11 @@ This will not remove any existing _deploymentTarget_'s that utilizing this `temp
 
 ## Group Technology Descriptor
 
-… is available for all groups under governance. Where applicable identical specifications at the `group` level override the `template` level. Its not necessary for `group` information to be specified as a pre-requisite to adding a Service / Application / Component to a non-existent group.
+… is available for all groups under governance. Where applicable identical specifications at the `group` level override the `template` level. Its not necessary for `group` information to be specified as a pre-requisite to adding a Micro/NanoService to a non-existent group.
 
-It is possible Service / Application / Component to inherit configuration information from the `group` level, thus allowing enhanced security over a traditional deployment model, where keys can be present in the application environment and unknown to developers with Service / Application / Component source code access.
+It is possible Micro/NanoService to inherit configuration information from the `group` level, thus allowing enhanced security over a traditional deployment model, where keys can be present in the application environment and unknown to developers with Micro/NanoService source code access.
 
-Additional information on the `group` Technology Descriptors is [available](./configuration/groups.md)
+Additional information on the `group` Technology Descriptors is [available](./configuration/suites.md)
 
 ## Additional Reading / Information
 

@@ -9,9 +9,9 @@
 
 ## Understanding
 
-… core meta component for governance. This file describes the `template`'s available for _deploymentTarget_ to be created from. Its the highest level of inheritance for governance and configuration when deploying a collection of Service / Application / Components into a _deploymentTarget_. Specified items are inherited as low priority defaults unless overriden.
+… core component of the **Universal MicroServices Language**. This file describes the `template`'s available for _deploymentTarget_ to be created from. Its the highest level of inheritance for governance and configuration when deploying a collection of Micro/NanoServices into a _deploymentTarget_. Specified items are inherited as low priority defaults unless overriden.
 
-_Cyvive.io_'s configuration language is architecturally and contexturally derived from over 35 specifilized industry and academic works for providing a governance via policy meta-model that agnostically interfaces with the most complex orchestration technology while articulately able to be used in conversation.
+_Cyvive_'s configuration language is architecturally and contexturally derived from partnership with 3 Universities and over 35 industry publications for providing a governance via policy meta-model that agnostically interfaces with the most complex orchestration technology while articulately able to be used in conversation.
 
 _This file is a powerhouse behind agnostic infrastructure, and provides the most simple abstraction of deployment available today._
 
@@ -22,28 +22,28 @@ _This file is a powerhouse behind agnostic infrastructure, and provides the most
 
 ### Default Template Names
 **dev** (type: _development_)
-	- single container availability
+  - single container availability
   - minimum resource allocation
   - probes:
-	  - ready
+    - ready
 **ha** (type: _high availability development_)
-	- dual container availability
+  - dual container availability
   - minimum resource allocation
   - probes:
-	  - ready
+    - ready
 **perf** (type: _performance_)
-	- dual container availability
+  - dual container availability
   - maximum resource allocation
-	- probes:
-		- ready
-		- health
+  - probes:
+    - ready
+    - health
 **prod** (type: _production_)
-	- high availability
-	- horizonal autoscaling
-	- maximum resource allocation
-	- probes:
-		- ready
-		- health
+  - high availability
+  - horizonal autoscaling
+  - maximum resource allocation
+  - probes:
+    - ready
+    - health
 
 `template` type selection is controlled via the `operatingEnvironment` field. The following states select the `operatingEnvironment`:
 - [] @ **dev** (default)
@@ -52,11 +52,11 @@ _This file is a powerhouse behind agnostic infrastructure, and provides the most
 - ['PRODLIKE'] @ **prod**
 - ['HALIKE', 'PRODLIKE'] @ **perf**
 
-This approach enables any number of copies or versions of _deploymentTarget_ to be deployed or updated with identical or slightly varied configuration. Additionally as the governance process is version aware, multiple versions of the Service / Application / Component can co-exist in the same _deploymentTarget_
+This approach enables any number of copies or versions of _deploymentTarget_ to be deployed or updated with identical or slightly varied configuration. Additionally as the governance process is version aware, multiple versions of the Micro/NanoService can co-exist in the same _deploymentTarget_
 
-**Cyvive.io** provides this default set of Template Technology Descriptors not to enforce direction on organisations but to assist with rapid adoption and integration with existing processes. The default Templates cover all `operatingEnvironment` types that an organization would utilize in developing and promoting an Application / Service / Component through its Continuous Delivery / Deployment lifecycle. While isolating and adding the infrastructure complexities step by step to assist with narrowing debugging focus.
+**Cyvive.io** provides this default set of Template Technology Descriptors not to enforce direction on organisations but to assist with rapid adoption and integration with existing processes. The default Templates cover all `operatingEnvironment` types that an organization would utilize in developing and promoting an Micro/NanoService through its Continuous Delivery / Deployment lifecycle. While isolating and adding the infrastructure complexities step by step to assist with narrowing debugging focus.
 
-When creating a _deploymentTarget_ **Cyvive.io** will deploy in parallel constrained by priority order all Services / Applications / Components relying on the container orchestration technology to confirm that each Service / Application / Component has started correctly. Should a service fail to start the failure will be reported back, otherwise a sucess response will be recieved.
+When creating a _deploymentTarget_ **Cyvive.io** will deploy in parallel constrained by priority order all Micro/NanoServices relying on the container orchestration technology to confirm that each Micro/NanoService has started correctly. Should a service fail to start the failure will be reported back, otherwise a sucess response will be recieved.
 
 ## Root Structure
 
@@ -70,7 +70,7 @@ mandatory:
 ```
 As mentioned previously any custom name can be used for a `template` except `mandatory` as its a reserved `operatingEnvironment`: All information populated in this key will be deployed into **all** _deploymentTarget_'s
 
-Should `mandatory` be used, it follows the same structure as **Cyvive.io**'s [Service / Application / Component](./index.md) with the exception of `groups` as the `mandatory` key replaces the `group` key. As such the dedicated `group` configuration is also unavailable for `mandatory`
+Should `mandatory` be used, it follows the same structure as **Cyvive.io**'s [Micro/NanoService](./index.md) with the exception of `groups` as the `mandatory` key replaces the `group` key. As such the dedicated `group` configuration is also unavailable for `mandatory`
 
 ## Template Technology Descriptor
 
@@ -86,7 +86,7 @@ example:
 
 ### environment
 
-… structural copy of [Service / Application / Component Environment](./index.md#environment)
+… structural copy of [Micro/NanoService Environment](./index.md#environment)
 
 ### operatingEnvironment
 
@@ -105,5 +105,5 @@ dev:
 
 ### resource
 
-… structural copy of [Service / Application / Component Resource](./index.md#resource)
+… structural copy of [Micro/NanoService Resource](./index.md#resource)
 

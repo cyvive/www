@@ -43,10 +43,9 @@ pages:
       - 'Developer': 'governance/usage/developer.md'
       - 'Govenor': 'governance/usage/govenor.md'
     - 'Configuration':
-      - 'Service': 'governance/configuration/index.md'
-      - 'Application': 'governance/configuration/index.md'
-      - 'Component': 'governance/configuration/index.md'
-      - 'Groups': 'governance/configuration/groups.md'
+      - 'Suite of Services': 'governance/configuration/suites.md'
+      - 'MicroService': 'governance/configuration/index.md'
+      - 'NanoService': 'governance/configuration/index.md'
       - 'Templates': 'governance/configuration/templates.md'
         #  - 'Blog':
         #- 'itstarts': 'blog/itstarts.md'
