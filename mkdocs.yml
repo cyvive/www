@@ -8,7 +8,7 @@ theme:
   name: 'material'
   language: 'en'
   palette:
-    primary: 'blue grey'
+    primary: 'grey'
     accent: 'lime'
   logo: 'images/logo.png'
   favicon: 'images/favicon.ico'
@@ -38,6 +38,7 @@ pages:
     - 'Understanding': 'ecosystem/index.md'
   - 'Governance':
     - 'Understanding': 'governance/index.md'
+    - 'Case for Governance': 'governance/case-for.md'
     - 'Usage':
       - 'Developer': 'governance/usage/developer.md'
       - 'Govenor': 'governance/usage/govenor.md'
@@ -47,8 +48,8 @@ pages:
       - 'Component': 'governance/configuration/index.md'
       - 'Groups': 'governance/configuration/groups.md'
       - 'Templates': 'governance/configuration/templates.md'
-  - 'Blog':
-    - 'itstarts': 'blog/itstarts.md'
+        #  - 'Blog':
+        #- 'itstarts': 'blog/itstarts.md'
 
 
 

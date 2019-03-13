@@ -27,19 +27,13 @@ There is a strong market need for simplicity, sanity and control of the n+1 choi
 
 ## What?
 
-Cyvive provides **Immutable Change**, from the instrastructure through to moment in time understanding of deployed applications. Everything is Immutable. This means your business, or parts of it can be reproduced, moved or upgraded safely. This **Immutable Change** is provided through two key approaches:
+Cyvive, simply is **Immutable Change**, applied through all **Cloud Native** layers and beyond. This means your business, or parts of it can be reproduced, moved or upgraded safely. Cyvive enables this through: 
 
-### Operational Platform
+### Immutable Operational Platform
 
-Infrastructure-as-a-Service, expects the cloud service provider to deliver infrastructure components that would otherwise exist in an on-premises data center. These components could consist of servers, storage and networking as well as the virtualization layer, which the IaaS provider hosts in its own data center. While they may also provide Platform-as-a-Service (PaaS) offerings such as cloud functions, container execution api's, or even Kubernetes variations. By design, they are not turn-key offerings.
+Infrastructure-as-a-Service, expects the cloud service provider to deliver infrastructure components that would otherwise exist in an on-premises data center. These components could consist of servers, storage and networking as well as the virtualization layer, which the (Cloud Service Provider CSP) IaaS provider hosts in its own data center. While they may also provide Platform-as-a-Service (PaaS) offerings such as cloud functions, container execution api's, or even Kubernetes variations. By design, they are not turn-key offerings.
 
 **Cyvive**, however, is. As an operational platform, it directly interfaces with the cloud provider (or Bare Metal) of choice using the provides IaaS interactions to provision an immutable collection of components necessary to run the orchestrator of choice. The default being Kubernetes
-
-### EcoSystem
-
-**Cloud Native** requires a collection of tools, or an extended ecosystem of services to understand and, unlock and leverage its full potential. Each tool, when selected by companies typically goes through a process, that takes months for an efficient team with multitudes of Proof of Concepts, each potentially causing *back to the drawing board moments*. The modern company doesn't have the luxury of time to assess, stabilize and incrementally add each component of the **Cloud Native** ecosystem while guaranteeing stability amongst change management in their Digital Transformation journey.
-
-**Cyvive** takes the best in breed tool for each part of the EcoSystem and manages its lifecycle. Choices are available between Open Source or Propriatory where possible. Such careful selection and management of the Best in Breed Candidates of the EcoSystem unlocks the power of the Orchestrator to perform often significantly beyond its standard capabilities
 
 ### Governance
 
@@ -47,15 +41,20 @@ MicroServices are a suite of applications providing a specific function. They ar
 
 The defacto approach to MicroServices is to run them within a container, in most situations, even the _functions / serverless_ approach ultimately runs within a container. As such to actually execute the code, open source and propriatory libraries (which are regularly updated) are aggregated into the container, where to comply with security and zero day vulnerability patching must be updated regularly.
 
-Ironically, 50 MicroServices are often the tipping point for unmanagable complexity. 50 MicroServices can have a maximum of 1225 interactions, versions, and dependencies between eachother. It is also a realistic expectation that at least one of the Open Source libraries used in each MicroService will need to be updated, tested and validated as production safe. Once every couple of days, or potentially 700 redeploys a month.
+Ironically, 50 MicroServices are often the tipping point for unmanagable complexity. 50 MicroServices can have a maximum of 1225 interactions, versions, and dependencies between eachother. It is also a realistic expectation that at least one of the Open Source libraries used in each MicroService will need to be updated, tested and validated as production safe every couple of days. Potentially 700 redeploys a month.
 
 While the Continous Integration System may validate the code is safe, by nature MicroServices require Continous Deployment / Promotion through environmental complexity to _proove_ they are production stable. 
-
 MicroServices also have their own independent dependency graph, so actual deployments may not be as simple as replacing a single service in isolation each time.
 
 **Cyvive**, as the Premier MicroService Governance solution, streamlines all complexities through dynamic dependency graphs, an industry standard configuration & communication syntax, release management, configuration and version management for MicroServices through to Infrastructure. 
 
 Any part of your infrastructure can be deployed on-demand, with all relevant dependent services, in any environment.
+
+### EcoSystem
+
+**Cloud Native** requires a collection of tools, or an extended ecosystem of services to understand and, unlock and leverage its full potential. Each tool, when selected by companies typically goes through a process, that takes months for an efficient team with multitudes of Proof of Concepts, each potentially causing *back to the drawing board moments*. The modern company doesn't have the luxury of time to assess, stabilize and incrementally add each component of the **Cloud Native** ecosystem while guaranteeing stability amongst change management in their Digital Transformation journey.
+
+**Cyvive** takes the best in breed tool for each part of the EcoSystem and manages its lifecycle. Choices are available between Open Source or Propriatory where possible. Such careful selection and management of the Best in Breed Candidates of the EcoSystem unlocks the power of the Orchestrator to perform often significantly beyond its standard capabilities
 
 ### Cloud Agnostic
 
