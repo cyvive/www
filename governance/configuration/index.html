@@ -40,7 +40,7 @@
     
     
       
-        <title>Component - Cyvive</title>
+        <title>NanoService - Cyvive</title>
       
     
     
@@ -51,7 +51,7 @@
       
         
         
-        <meta name="theme-color" content="#546e7a">
+        <meta name="theme-color" content="#757575">
       
     
     
@@ -77,7 +77,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="lime">
+    <body dir="ltr" data-md-color-primary="grey" data-md-color-accent="lime">
   
     <svg class="md-svg">
       <defs>
@@ -89,7 +89,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#application-service-yaml" tabindex="1" class="md-skip">
+      <a href="#micronanoservice-yaml" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -114,7 +114,7 @@
               Cyvive
             </span>
             <span class="md-header-nav__topic">
-              Component
+              NanoService
             </span>
           
         </div>
@@ -211,19 +211,6 @@
       
         <a href="../" title="Governance" class="md-tabs__link md-tabs__link--active">
           Governance
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../../blog/itstarts.md" title="Blog" class="md-tabs__link">
-          Blog
         </a>
       
     </li>
@@ -435,15 +422,27 @@
           
 
 
+  <li class="md-nav__item">
+    <a href="../case-for/" title="Case for Governance" class="md-nav__link">
+      Case for Governance
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
-    <label class="md-nav__link" for="nav-4-2">
+    <label class="md-nav__link" for="nav-4-3">
       Usage
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-2">
+      <label class="md-nav__title" for="nav-4-3">
         Usage
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -487,13 +486,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4" checked>
     
-    <label class="md-nav__link" for="nav-4-3">
+    <label class="md-nav__link" for="nav-4-4">
       Configuration
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
+      <label class="md-nav__title" for="nav-4-4">
         Configuration
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -505,8 +504,8 @@
 
 
   <li class="md-nav__item">
-    <a href="./" title="Service" class="md-nav__link">
-      Service
+    <a href="suites/" title="Suite of Services" class="md-nav__link">
+      Suite of Services
     </a>
   </li>
 
@@ -517,8 +516,8 @@
 
 
   <li class="md-nav__item">
-    <a href="./" title="Application" class="md-nav__link">
-      Application
+    <a href="./" title="MicroService" class="md-nav__link">
+      MicroService
     </a>
   </li>
 
@@ -538,11 +537,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Component
+        NanoService
       </label>
     
-    <a href="./" title="Component" class="md-nav__link md-nav__link--active">
-      Component
+    <a href="./" title="NanoService" class="md-nav__link md-nav__link--active">
+      NanoService
     </a>
     
       
@@ -563,6 +562,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#naming" title="Naming" class="md-nav__link">
+    Naming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#absolute-minimum-file-structure" title="Absolute Minimum File Structure" class="md-nav__link">
     Absolute Minimum File Structure
   </a>
@@ -570,22 +576,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#application-service-inheritence-structure" title="Application / Service Inheritence Structure" class="md-nav__link">
-    Application / Service Inheritence Structure
+  <a href="#micronanoservice-inheritence-structure" title="Micro/NanoService Inheritence Structure" class="md-nav__link">
+    Micro/NanoService Inheritence Structure
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#group-level-configuration-technology-descriptor" title="Group Level Configuration / Technology Descriptor" class="md-nav__link">
-    Group Level Configuration / Technology Descriptor
+  <a href="#suite-level-configuration-technology-descriptor" title="Suite Level Configuration / Technology Descriptor" class="md-nav__link">
+    Suite Level Configuration / Technology Descriptor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#application-service-technology-descriptor" title="Application / Service Technology Descriptor" class="md-nav__link">
-    Application / Service Technology Descriptor
+  <a href="#microservice-technology-descriptor" title="MicroService Technology Descriptor" class="md-nav__link">
+    MicroService Technology Descriptor
   </a>
   
     <nav class="md-nav">
@@ -613,8 +619,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#component" title="component" class="md-nav__link">
-    component
+  <a href="#nano" title="nano" class="md-nav__link">
+    nano
   </a>
   
 </li>
@@ -718,18 +724,6 @@
 
 
   <li class="md-nav__item">
-    <a href="groups/" title="Groups" class="md-nav__link">
-      Groups
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="templates/" title="Templates" class="md-nav__link">
       Templates
     </a>
@@ -738,42 +732,6 @@
         
       </ul>
     </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Blog
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Blog
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../blog/itstarts.md" title="itstarts" class="md-nav__link">
-      itstarts
-    </a>
   </li>
 
         
@@ -810,6 +768,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#naming" title="Naming" class="md-nav__link">
+    Naming
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#absolute-minimum-file-structure" title="Absolute Minimum File Structure" class="md-nav__link">
     Absolute Minimum File Structure
   </a>
@@ -817,22 +782,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#application-service-inheritence-structure" title="Application / Service Inheritence Structure" class="md-nav__link">
-    Application / Service Inheritence Structure
+  <a href="#micronanoservice-inheritence-structure" title="Micro/NanoService Inheritence Structure" class="md-nav__link">
+    Micro/NanoService Inheritence Structure
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#group-level-configuration-technology-descriptor" title="Group Level Configuration / Technology Descriptor" class="md-nav__link">
-    Group Level Configuration / Technology Descriptor
+  <a href="#suite-level-configuration-technology-descriptor" title="Suite Level Configuration / Technology Descriptor" class="md-nav__link">
+    Suite Level Configuration / Technology Descriptor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#application-service-technology-descriptor" title="Application / Service Technology Descriptor" class="md-nav__link">
-    Application / Service Technology Descriptor
+  <a href="#microservice-technology-descriptor" title="MicroService Technology Descriptor" class="md-nav__link">
+    MicroService Technology Descriptor
   </a>
   
     <nav class="md-nav">
@@ -860,8 +825,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#component" title="component" class="md-nav__link">
-    component
+  <a href="#nano" title="nano" class="md-nav__link">
+    nano
   </a>
   
 </li>
@@ -965,127 +930,143 @@
               
                 
                 
-                <h1 id="application-service-yaml">Application / Service YAML<a class="headerlink" href="#application-service-yaml" title="Permanent link">&para;</a></h1>
+                <h1 id="micronanoservice-yaml">Micro/NanoService YAML<a class="headerlink" href="#micronanoservice-yaml" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>This functionality was originally offered by the parent company as a separate product <strong>Fathomable</strong>. It is undergoing consolidation into <strong>Cyvive</strong>'s core and is restricted to <em>beta</em> customers at this time. Please contact your account manager via live-chat should you wish to participate.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info<ul>
-<li><strong>Scope:</strong> <em>App / Service Specific</em></li>
+<li><strong>Scope:</strong> <em>MicroService Specific</em></li>
 <li><strong>File:</strong> <code>cyvive.yaml</code></li>
-<li><strong>Location:</strong> <em>Application / Service Repository</em> / <em>CI/CD Pushed</em></li>
+<li><strong>Location:</strong> <em>Git Repository</em> / <em>CI/CD Pushed</em></li>
 </ul>
 </p>
 </div>
 <h2 id="understanding">Understanding<a class="headerlink" href="#understanding" title="Permanent link">&para;</a></h2>
-<p>… core meta component for governance. This file describes the specific application / service's governance policy to be extracted and implemented on demand in the cluster orchestration infrastructure.</p>
-<p>While <em>Cyvive.io</em> doesn't mandate a specific adoption approach, a truely minimal configuration file is achieved through following industry best practices for structure and oragnisation.</p>
-<p><em>Cyvive.io</em>'s configuration language is architecturally and contexturally derived from over 35 specifilized industry and academic works for providing a governance via policy meta-model that agnostically interfaces with the most complex orchestration technology while articulately able to be used in conversation.</p>
+<p>… core component of the <strong>Universal MicroServices Language</strong>. This file describes the specific MicroService Governance policy to be extracted and implemented on demand in a Cloud Agnostic Cluster.</p>
+<p>While <em>Cyvive</em> doesn't mandate a specific adoption approach, a truely minimal configuration file is achieved through following industry best practices for structure and oragnisation.</p>
+<p><em>Cyvive</em>'s configuration language is architecturally and contexturally derived from partnership with 3 Universities and over 35 industry publications for providing a governance via policy meta-model that agnostically interfaces with the most complex orchestration technology while articulately able to be used in conversation.</p>
 <p><em>This file is a powerhouse behind agnostic infrastructure, and provides the most simple abstraction of deployment available today.</em></p>
+<h2 id="naming">Naming<a class="headerlink" href="#naming" title="Permanent link">&para;</a></h2>
+<p><strong>Cyvive</strong> aligns with <strong>Cloud Native</strong> and <strong>MicroServices</strong> approaches. However, this <strong>Universal MicroServices Language</strong> is flexible enough to be used with OSIMMv2 / TOGAF as such the following naming conventions apply:</p>
+<p><strong>MicroServices</strong>:
+- Suite
+- Micro
+- Nano</p>
+<p><strong>OSIMMv2 / TOGAF</strong>
+- Group     -&gt; Suite
+- Service   -&gt; Micro
+- Component -&gt; Nano</p>
+<p><strong>CloudFunctions</strong>
+- Functions -&gt; Nano</p>
+<blockquote>
+<p>If your PaaS can efficiently start instances in 20ms that run for half a second, then call it serverless
+Adrian Cockcroft AWS VP - 2016</p>
+</blockquote>
+<p>In the context of this quote, any well designed container with proper governance and management can be classified as a <em>function</em>. For this reason, <strong>Cyvive</strong> uses the terminology <em>Nano</em> instead of <em>function</em> to more appropriately cover the functions and nanoservices classifications.</p>
 <h2 id="absolute-minimum-file-structure">Absolute Minimum File Structure<a class="headerlink" href="#absolute-minimum-file-structure" title="Permanent link">&para;</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note<p>'⇛' character is used throughout this documentation where items are mandatory with respect to the parent YAML key. If not specified, then item is optional.</p>
 </p>
 </div>
-<div class="codehilite"><pre><span></span>exampleGroup:
-⇛ exampleApp:
+<div class="codehilite"><pre><span></span>exampleSuite:
+⇛ exampleMicro:
 ⇛   version: &#39;v1.8.x&#39;
 </pre></div>
 
 
-<p>… this minimum structure is all that is necessary for <em>Cyvive.io</em> to commence governance and interface with the orchestration technology at a minimum level.</p>
-<p>If <em>Cyvive.io</em> was then used to govern this application / service in a <em>deploymentTarget</em> called 'preproduction' using the <em>template</em> 'perf' against <em>Kubernetes</em> as a orchestrator the following would happen:</p>
+<p>… this minimum structure is all that is necessary for <em>Cyvive</em> to commence governance and interface with the orchestration technology at a minimum level.</p>
+<p>If <em>Cyvive</em> was then used to govern this application / service in a <em>deploymentTarget</em> called 'preproduction' using the <em>template</em> 'perf' against <em>Kubernetes</em> as a orchestrator the following would happen:</p>
 <ul>
-<li>a <code>Deployment</code> would be created using the image: exampleGroup/exampleApp:v1.8.x</li>
+<li>a <code>Deployment</code> would be created using the DockerHub hosted image: exampleSuite/exampleMicro:v1.8.x</li>
 <li>a <code>Service</code> would be created mapping port 80 to the <code>Deployment</code></li>
-<li>a <em>DNS</em> entry would be created in the cluster as <code>exampleApp.exampleGroup.preproduction.svc.cluster.local</code></li>
-<li>any other applications governed by <em>Cyvive.io</em>'s and allowed to be deployed against this <em>template</em> would also be deployed following an automated dependency order.</li>
+<li>a <em>DNS</em> entry would be created in the cluster as <code>exampleMicro.exampleSuite.preproduction.svc.cluster.local</code></li>
+<li>any other applications governed by <em>Cyvive</em>'s and allowed to be deployed against this <em>template</em> would also be deployed following an automated dependency order.</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note<p>SemVer is rapidly becoming the version management approach of choice for development as it balances the needs of devoplers and continous container deployment well while maintaining business requirements for release management and change requests.</p>
 </p>
 </div>
-<h2 id="application-service-inheritence-structure">Application / Service Inheritence Structure<a class="headerlink" href="#application-service-inheritence-structure" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>exampleGroup:
-⇛ exampleApp:
-        component: &#39;identifier&#39;
+<h2 id="micronanoservice-inheritence-structure">Micro/NanoService Inheritence Structure<a class="headerlink" href="#micronanoservice-inheritence-structure" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>exampleSuite:
+⇛ exampleMicro:
+    nano: &#39;identifier&#39;
 ⇛   version: &#39;vTag&#39;
 </pre></div>
 
 
-<p>… the typical structure used in a governance model would provide <code>components</code>, <code>applications</code>, <code>groups</code> as units of categorization. <em>Cyvive.io</em> inherits this concept where typically <code>groups</code> would be a higher level <em>Business Unit</em> or <em>Service</em> containing <em>MicroServices</em> and depending on the complexity of the higher level <code>group</code> service <code>components</code> (also often refered to as <code>CloudFunctions</code> or <code>NanoServices</code>)</p>
-<p>The exact definition and demarkation of <code>groups</code> is left to the client, but by default when requesting a <em>container</em> from the <em>container repository</em> the format will be as such: <code>exampleGroup/exampleApp-component:vTag</code> naturally lending to the following organisation use-cases:</p>
-<ul>
-<li><strong>Business Unit Separation</strong> every logical business unit has a collection of apps that interface with other parts of the business / consumer.</li>
-<li><strong>Service Oriented Architecture</strong> where a collection of microservices are combined to form a logical unit. i.e. Frontend (Browser), Backend (API), DataBase</li>
-</ul>
-<p>As such its possible to use <em>Cyvive.io</em> with any level of complexity in application releationships, while keeping isolation and deployment in a layered security approach.</p>
-<h2 id="group-level-configuration-technology-descriptor">Group Level Configuration / Technology Descriptor<a class="headerlink" href="#group-level-configuration-technology-descriptor" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>exampleGroup
-    exampleApp: {}
-    group: {}
+<p>… the typical structure used in a governance model would provide <code>nano</code>, <code>micro</code>, <code>suite</code> as units of categorization. <em>Cyvive</em> inherits this concept where typically <code>suite</code> would be a higher level <em>Business Unit</em> correctly decomposed containing a collection of <em>MicroServices</em>. </p>
+<p>The splitting point between <code>micro</code> and <code>nano</code> typically has a line of demarkation drawn between the need for an internal data model and direct algorithmic processing. </p>
+<p>The exact definition and demarkation of <code>suites</code> is left to the client, however by default when requesting a <em>container</em> from the <em>container repository</em> the format will be as such: 
+- <code>exampleSuite/exampleMicro:vTag</code> or 
+- <code>exampleSuite/exampleMicro-exampleNano:vTag</code> if <code>nano</code> key has been provided</p>
+<p>As such its possible to use <em>Cyvive</em> with any level of complexity in application relationships, while keeping isolation and deployment in a layered security approach.</p>
+<h2 id="suite-level-configuration-technology-descriptor">Suite Level Configuration / Technology Descriptor<a class="headerlink" href="#suite-level-configuration-technology-descriptor" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>exampleSuite
+  exampleMicro: {}
+  suite: {}
 </pre></div>
 
 
-<p>… is available for all groups under governance. Where applicable identical specifications at the <code>group</code> level override the <code>template</code> level. Its not necessary for <code>group</code> information to be specified as a pre-requisite to adding a Service / Application / Component to a non-existent group.</p>
-<p>It is possible Service / Application / Component to inherit configuration information from the <code>group</code> level, thus allowing enhanced security over a traditional deployment model, where keys can be present in the application environment and unknown to developers with Service / Application / Component source code access.</p>
-<p>Additional information on the <code>group</code> Technology Descriptors is <a href="groups/">available</a></p>
-<h2 id="application-service-technology-descriptor">Application / Service Technology Descriptor<a class="headerlink" href="#application-service-technology-descriptor" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span>exampleGroup
-  exampleApp:
-        availability: {}
-        circuitBreaker: {}
-        commandLineInterface: {}
-        component: string
-        daemon: boolean
-        endpoint: {}
-        environment: {}
-        label: {}
-        layer: string
-        repository: {}
-        resource: {}
-        security: {}
-        stateful: {}
-        version: {}
+<p>… is available for all suites under governance. Where applicable identical specifications at the <code>suite</code> level override the <code>template</code> level. Its not necessary for <code>suite</code> information to be specified as a pre-requisite to adding a Micro/NanoService.</p>
+<p>It is possible for a Micro/NanoService to inherit configuration information from the <code>suite</code> level, thus allowing enhanced security over a traditional deployment model, where keys can be present in the application environment and unknown to developers with MicroService / NanoService source code access.</p>
+<p>Additional information on the <code>suite</code> Technology Descriptors is <a href="suites/">available</a></p>
+<h2 id="microservice-technology-descriptor">MicroService Technology Descriptor<a class="headerlink" href="#microservice-technology-descriptor" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>exampleSuite
+  exampleMicro:
+    availability: {}
+    circuitBreaker: {}
+    commandLineInterface: {}
+    component: string
+    daemon: boolean
+    endpoint: {}
+    environment: {}
+    label: {}
+    layer: string
+    repository: {}
+    resource: {}
+    security: {}
+    stateful: {}
+    version: {}
 </pre></div>
 
 
 <p>… illustrates a high level overview of the logical configuration sections. Detailed information is located under each subheading below. Where values for keys are shown they are the default values.</p>
 <h3 id="availability">availability<a class="headerlink" href="#availability" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-    exampleApp:
-        availability:
-            gracePeriod:
-                boot: 1
-                stability: 0
-                termination: 5
-            minimum: 1
-            maximum: 2
-            probe:
-                health:
-                    interval: 10
-                    path: &#39;/&#39;
-                    port: 80
-                ready:
-                    interval: 5
-                    path: &#39;/&#39;
-                    port: 80
-                timeout: 1
-            scalingEvent: {}
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
+    availability:
+      gracePeriod:
+        boot: 1
+        stability: 0
+        termination: 5
+      minimum: 1
+      maximum: 2
+      probe:
+        health:
+          interval: 10
+          path: &#39;/&#39;
+          port: 80
+        ready:
+          interval: 5
+          path: &#39;/&#39;
+          port: 80
+        timeout: 1
+      scalingEvent: {}
 </pre></div>
 
 
 <ul>
 <li><code>gracePeriod</code>: minimum time in seconds to wait for events to occur<ul>
-<li><code>boot</code>: Service / Application / Component &amp; operating system startup boot time, this should be the minimum time before a health check endpoint is available to process a request.</li>
+<li><code>boot</code>: Micro/NanoService &amp; operating system startup boot time, this should be the minimum time before a health check endpoint is available to process a request.</li>
 <li><code>stability</code>: amount of time to wait for the health check endpoint to ensure consistent returns after boot time has been completed. This is typically used in legacy applications that need to stabilize their upstream and downstream communications when started or have large amounts of data to sync.</li>
-<li><code>termination</code>: is the maximum amount of time to wait before hard terminating the container operating system. It does not guarantee the Service / Application / Component will have or take this long to terminate, its just the maximum amount of time to wait for the signal from the Operating System to ensure its okay to terminate. (Note: the termination signal is sent immediately to all container processes, this is the period before the kill signal is sent)</li>
+<li><code>termination</code>: is the maximum amount of time to wait before hard terminating the container operating system. It does not guarantee the Micro/NanoService will have or take this long to terminate, its just the maximum amount of time to wait for the signal from the container operating system to ensure its okay to terminate. (Note: the termination signal is sent immediately to all container processes, this is the period before the kill signal is sent)</li>
 </ul>
 </li>
 <li><code>minimum</code>: guaranteed minimum number of replicas to always be deployed in the <em>deploymentTarget</em></li>
 <li><code>maximum</code>: when scaling ensure that this number is not exceeded</li>
-<li><code>probes</code>: notify the underlying orchestrator of Service / Application / Component status. Where <code>health</code> is actual health, and <code>ready</code> is ability to recieve traffic<ul>
+<li><code>probes</code>: notify the underlying orchestrator of Micro/NanoService status. Where <code>/health</code> is actual health, and <code>/ready</code> is ability to recieve traffic<ul>
 <li><code>interval</code>: time in seconds for checking endpoint</li>
 <li><code>path</code>: endpoint path relative to container</li>
 <li><code>port</code>: internal port the probe endpoint is listening on</li>
@@ -1094,7 +1075,7 @@
 </li>
 <li><code>scalingEvent</code>: is a passthrough object of trigger events to integrate with orchestration support in triggering scaling up and down of the replicas.</li>
 </ul>
-<p><strong>Note:</strong> With respect to deployment timeouts, <strong>Cyvive.io</strong>'s standard approach is to stall deployments as failed if the Service / Application / Component takes fails to enter <code>ready</code> state using one of the following timelines in order of priority rounded to the nearest second:</p>
+<p><strong>Note:</strong> With respect to deployment timeouts, <strong>Cyvive</strong>'s standard approach is to stall deployments as failed if the Micro/NanoService fails to enter <code>ready</code> state using one of the following timelines in order of priority rounded to the nearest second:</p>
 <ol>
 <li><strong>probe.ready</strong> specified: <code>(gracePeriod.boot + gracePeriod.stability + (probe.ready.interval * 2)) * 3.3</code></li>
 <li><strong>probe.health</strong> specified: <code>(gracePeriod.boot + gracePeriod.stability + probe.health.interval) * 3.3</code></li>
@@ -1104,59 +1085,62 @@
 </ol>
 <p>As seen above 10% buffer is applied to times to ensure container schedulling / restarting via the orchestrator doesn't introduce false-positives</p>
 <h3 id="circuitbreaker">circuitBreaker<a class="headerlink" href="#circuitbreaker" title="Permanent link">&para;</a></h3>
-<p><em>available to closed beta customers</em></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>configuration structure still stabilizing </p>
+</div>
 <h3 id="commandlineinterface">commandLineInterface<a class="headerlink" href="#commandlineinterface" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-    exampleApp:
-        commandLineInterface:
-            argument: []
-            command: &#39;&#39;
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
+    commandLineInterface:
+      argument: []
+      command: &#39;&#39;
 </pre></div>
 
 
-<p>… is an override path for container start commands. While most startups will embed the start command and respective arguments in the container image itself, efficient governance exposes all configuration, execution and dependency information. As such the organisation can choose to embed startup information in the container or expose via governance layer.</p>
+<p>… is an override path for container start commands. While most startups will embed the start command and respective arguments in the container image itself, efficient governance exposes all configuration, execution and dependency information. As such the organisation can choose to embed startup information in the container metadata or expose via governance layer.</p>
 <ul>
 <li><code>argument</code>: standard cli arguments for execution. e.g. ['--list', '--debug']</li>
 <li><code>command</code>: root command to execute when starting the container. e.g. '/usr/local/bin/command' should this not be specified then the default command the container was built with will be executed.</li>
 </ul>
-<h3 id="component">component<a class="headerlink" href="#component" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-    exampleApp:
-        component: &#39;&#39;
+<h3 id="nano">nano<a class="headerlink" href="#nano" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
+    nano: &#39;&#39;
 </pre></div>
 
 
-<p>… provides a namespace separation for <code>components</code>. Typically used when the Service / Application would need to be logicaly broken down further than just Business Unit / Group to Service / Application</p>
+<p>… provides a namespace separation for <code>nano</code>Services. Typically used when the MicroService would need to be logicaly broken down further than is possible within the <code>suite</code> specification. Or when only algorithmic processing capabilities are necessary</p>
 <h3 id="daemon">daemon<a class="headerlink" href="#daemon" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-    exampleApp:
-        daemon: false
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
+    daemon: false
 </pre></div>
 
 
-<p>… upgrades the Service / Application / Component to run as a <em>Daemon</em> in the <em>deploymentTarget</em>. This ensures that every physical node executing a Service / Application / Component belonging to this group will have this <em>Daemon</em> available locally.</p>
+<p>… upgrades the Micro/NanoService to run as a <em>Daemon</em> in the <em>deploymentTarget</em>. This ensures that every physical node belonging to this suite will have this <em>Daemon</em> available on a low-latency local network hop.</p>
 <h3 id="endpoint">endpoint<a class="headerlink" href="#endpoint" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-  exampleApp:
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
     endpoint:
-            domain: {}
-            port: 80
-            provide: [&#39;/&#39;]
-            scheme: &#39;https&#39;
-            require: {}
+      domain: {}
+      port: 80
+      provide: [&#39;/&#39;]
+      scheme: &#39;https&#39;
+      require: []
 </pre></div>
 
 
-<p>… are created for every Service / Application / Component by default and register DNS via the following schema: <code>component-appName.groupName.deploymentTarget.domain</code></p>
+<p>… are created for every Micro/NanoService by default and register DNS via the following schema: <code>nanoName-microName.suiteName.deploymentTarget.domain</code></p>
 <ul>
 <li><code>port</code>: open port for inbound interaction.</li>
-<li><code>provide</code>: <strong>important</strong> for correct dependency management the <code>provide</code> endpoints are the registration points for Service / Application / Component searching in generating the deployment graph.</li>
+<li><code>provide</code>: <strong>important</strong> for correct dependency management the <code>provide</code> endpoints are the registration points for Micro/NanoService searching and generation in the deployment graph.</li>
 <li><code>scheme</code>: extensible against the scheme definitions in RFC standards, the key types are <em>http</em> and <em>https</em> where specifying https will cause auto-creation of SSL certificates at the cluster ingress point.</li>
 </ul>
 <p><strong>Exploring the complex root keys:</strong></p>
 <div class="codehilite"><pre><span></span>domain:
-    &#39;xyz.com&#39;: [&#39;DEVLIKE&#39;, &#39;HALIKE&#39;, &#39;PRODLIKE&#39;]
-    &#39;testing.co&#39;: [&#39;DEVLIKE&#39;]
+  &#39;xyz.com&#39;: [&#39;DEVLIKE&#39;, &#39;HALIKE&#39;, &#39;PRODLIKE&#39;]
+  &#39;testing.co&#39;: [&#39;DEVLIKE&#39;]
 </pre></div>
 
 
@@ -1164,73 +1148,73 @@
 - <code>key</code>: the domain name to expose against. This should be the Fully Qualified Domain Name (<em>FQDN</em>) as autogenerated DNS structure applies inside the cluster only.
 - <code>value</code>: array of <code>operatingEnvironment</code>'s valid for exposing against. Exposure follows the schema mentioned previously, however it can be overridden as necessary</p>
 <div class="codehilite"><pre><span></span>require:
-  - &#39;redux.exampleGroup:443/api/v1/ending&#39;: [&#39;incoming&#39;]
-  - &#39;exampleApp.exampleGroup:80/v1/&#39;: [&#39;incoming&#39;, &#39;outgoing&#39;]
+  - &#39;redux.exampleSuite:443/api/v1/ending&#39;: [&#39;incoming&#39;]
+  - &#39;exampleMicro.exampleSuite:80/v1/&#39;: [&#39;incoming&#39;, &#39;outgoing&#39;]
   - &#39;162.0.5.2:8080/&#39;: [&#39;outgoing&#39;]
 </pre></div>
 
 
-<p>The <code>require</code> object is quite important. It identifies all dependencies this Service / Application / Component has and helps contribute to the deployment order when creating a <em>deploymentTarget</em>. In the event a <code>require</code> is not registered with <strong>Cyvive.io</strong> it will be considered external to the cluster and <strong>assumed</strong> to already exist.</p>
-<p>A useful note is that different versions of the same Service / Application / Component can be consumed by other eachother. This is achieved via the <code>version</code> key where each governance technology descriptor registers against the Service / Application / Component version.</p>
+<p>The <code>require</code> object is quite important, and while optional, strongly recommended to always be supplied. It identifies all dependencies this Micro/NanoService has and helps contribute to the deployment order when creating a <em>deploymentTarget</em>. In the event a <code>require</code> is not registered with <strong>Cyvive</strong> it will be considered external to the cluster and <strong>assumed</strong> to already exist.</p>
+<p>A useful note is that different versions of the same Micro/NanoService can be consumed by other eachother. This is achieved via the <code>version</code> key where each governance technology descriptor registers against the Micro/NanoService version.</p>
 <p>The <code>require</code> object is structured as follows:
-- <code>key</code>: Uniform Resource Identifier (URI) <a href="https://www.ietf.org/rfc/rfc3986.txt">RFC 3986</a> compliant. The scheme is unnecessary as any routing restrictions
+- <code>key</code>: Uniform Resource Identifier (URI) <a href="https://www.ietf.org/rfc/rfc3986.txt">RFC 3986</a> compliant. The scheme is unnecessary as any routing restrictions are scoped as above
 - <code>value</code>: traffic direction for filewall / security registration</p>
 <h3 id="environment">environment<a class="headerlink" href="#environment" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-  exampleApp:
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
     environment:
-            file:
-                config: {}
-                secret: {}
-            variable: {}
+      file:
+        config: {}
+        secret: {}
+      variable: {}
 </pre></div>
 
 
-<p>… all items are directly exposed to the Service / Application / Component.</p>
+<p>… all items are directly exposed to the Micro/NanoService.</p>
 <p><strong>Exploring the complex root keys:</strong></p>
 <div class="codehilite"><pre><span></span>files:
-    config:
-        &#39;alpha&#39;:
-            mountPath: &#39;/alpha&#39;
-            data:
-                - name: configDetail
-                    value: &#39;string of information&#39;
+  config:
+    &#39;alpha&#39;:
+      mountPath: &#39;/alpha&#39;
+      data:
+        - name: configDetail
+          value: &#39;string of information&#39;
     &#39;delta&#39;:
-      inheritGroup: false
+      inheritSuite: false
 </pre></div>
 
 
 <p>Each item in <code>config</code> is a representation of a <em>ConfigMap</em> with individual items specified in the array object under <code>data</code>. Each item represents an individual file. <code>mountPath</code> is the directory location in the container that the <em>ConfigMap</em> should be mounted to.</p>
-<p>If <code>inheritGroup</code> is provided the configuration will be loaded from the group settings enabling a more 'global' oriented view of configuration</p>
+<p>If <code>inheritSuite</code> is provided the configuration will be loaded from the suite settings enabling a more 'global' oriented view of configuration</p>
 <div class="codehilite"><pre><span></span>files:
-    secrets:
-        &#39;secretname&#39;:
-            type: &#39;opaque&#39;
-            mountPath: &#39;/secret-location&#39;
-            data:
-                - name: secretInfo
-                    value: (base64 string)
-        &#39;anothersecret&#39;:
-            inheritGroup: false
+  secrets:
+    &#39;secretname&#39;:
+      type: &#39;opaque&#39;
+      mountPath: &#39;/secret-location&#39;
+      data:
+        - name: secretInfo
+          value: (base64 string)
+    &#39;anothersecret&#39;:
+      inheritSuite: false
 </pre></div>
 
 
 <p>Each item in <code>secrets</code> is a map with individual items under <code>data</code> representing files to be mounted into the <code>mountPath</code> location in the container.</p>
-<p>If <code>inheritGroup</code> is provided the secret will be loaded from the group settings enabling a more 'global' oriented view of configuration</p>
+<p>If <code>inheritSuite</code> is provided the secret will be loaded from the suite settings enabling a more 'global' oriented view of configuration</p>
 <div class="codehilite"><pre><span></span>variable:
-    &#39;exposeName&#39;: &#39;exposeValue&#39;
+  &#39;exposeName&#39;: &#39;exposeValue&#39;
 </pre></div>
 
 
 <p>Direct mapping of the <code>key</code> to <code>value</code> provided as an environmental variable when executing the container start command.</p>
-<p>Additionally <strong>Cyvive.io</strong> exposes some helper variables to identify the current context of the Service / Application / Component:</p>
+<p>Additionally <strong>Cyvive</strong> exposes some helper variables to identify the current context of the Micro/NanoService:</p>
 <ul>
-<li><code>SELF_NAME</code>: name of the Service / Application / Component. This will also be the <code>hostname</code> of the running container</li>
+<li><code>SELF_NAME</code>: name of the Micro/NanoService. This will also be the <code>hostname</code> of the running container</li>
 <li><code>SELF_NAME_LOADBALANCER</code>: to assist in discovery, this is the LoadBalancer endpoint for incluster communication to this container and its replicas. This is relative to the deploymentTarget and not the Fully Qualified Domain Name (FQDN)</li>
-<li><code>SELF_DEPLOYMENTTARGET</code>: <em>deploymentTarget</em> that the Service / Application / Component has been deployed into</li>
+<li><code>SELF_DEPLOYMENTTARGET</code>: <em>deploymentTarget</em> that the Micro/NanoService has been deployed into</li>
 <li><code>SELF_IP</code>: the internal cluster IP of the container</li>
 </ul>
-<p>The following self-explanatory variables are also available to the container when specified via <strong>Cyvive.io</strong>'s governance:</p>
+<p>The following self-explanatory variables are also available to the container when specified via <strong>Cyvive</strong>'s governance:</p>
 <ul>
 <li><code>SELF_MIN_MEMORY</code></li>
 <li><code>SELF_MIN_CPU</code></li>
@@ -1238,41 +1222,42 @@
 <li><code>SELF_MAX_CPU</code></li>
 </ul>
 <h3 id="hardwired">hardWired<a class="headerlink" href="#hardwired" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-    exampleApp:
-        hardWired:
-            clusterDNS: &#39;&#39;
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
+    hardWired:
+      clusterDNS: &#39;&#39;
 </pre></div>
 
 
 <p>… is a catch-all for compatibility with non-governed processes. <em>It is strongly recommended not to use these keys unless absolutely necessary</em> as each key will disable some governance functionality and introduce independent manual management scenarios that wouldn't normally be necessary.</p>
 <ul>
-<li><code>clusterDNS</code>: is a hard overwrite of the cluster internal load balancer endpoint for the Service / Application / Component. It disables the autogeneration capabilities and can help with initially migrating non Cloud Native items.</li>
+<li><code>clusterDNS</code>: is a hard overwrite of the cluster internal load balancer endpoint for the Micro/NanoService. It disables the autogeneration capabilities and can help with initially migrating non Cloud Native items.</li>
 </ul>
 <h3 id="label">label<a class="headerlink" href="#label" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-  exampleApp:
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
     label:
-      # app:                autocompleted ~ appName
-            # component:    autocompleted ~ component
+      # app:            autocompleted ~ appName
+      # component:          autocompleted ~ component
       # release:        autocompleted in PRODLIKE environments ~ canary or stable
-      # tier:               autocompleted ~ groupName
-            # version:      autocompleted ~ version key
+      # tier:           autocompleted ~ suiteName
+      # version:        autocompleted ~ version key
       {any others you require}
 </pre></div>
 
 
-<p>Any labels not specified above can be used to help identify the applications &amp; services. As the aforeentioned labels are reserved by <strong>Cyvive.io</strong> for governance, any custom values provided will be ignored as they are used for asset tracking</p>
-<p>Although there is nothing stopping its use, the recommended approach is not to use <em>hotfix</em> as a label or <em>blue</em> / <em>green</em> for deploys as when running Services / Application / Components en masse at scale, <em>canary</em> has been observed repeatedly as a more stable; reduced risk; and governable approach as everything passes through a 'canary' state anyway. (Under candidate based releases hotfixes are just releases that have been accelerated through the canary phase)</p>
+<p>Any labels not specified above can be used to help identify the applications &amp; services. As the aforeentioned labels are reserved by <strong>Cyvive</strong> for governance, any custom values provided will be ignored as they are used for asset tracking</p>
+<p>Although there is nothing stopping its use, the recommended approach is not to use <em>hotfix</em> as a label or <em>blue</em> / <em>green</em> for deploys as when running Micro/NanoServices en masse at scale, <em>canary</em> has been observed repeatedly as a more stable; reduced risk; and governable approach as everything passes through a 'canary' state anyway. (Under candidate based releases hotfixes are just releases that have been accelerated through the canary phase)</p>
+<p>Additionally, <strong>Cyvive</strong> uses <em>Shadow Traffic Replication</em> where return values are thrown away to prevent interference with production. This further provides isolation over the standard 'canary' approach validating the safety of the entire ecosystem to promote as a validated whole.</p>
 <p>There is no limit to how many labels can be specified</p>
 <h3 id="layer">layer<a class="headerlink" href="#layer" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-    exampleApp:
-        layer: &#39;base&#39;
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
+    layer: &#39;base&#39;
 </pre></div>
 
 
-<p>… is a concept often used in Enterprise Architecture and earlier microservices. <strong>Cyvive.io</strong> underwent an extreemly careful active engagement process with its users prior to introducing this key.</p>
+<p>… is a concept often used in Enterprise Architecture and earlier iterations of MicroServices. <strong>Cyvive</strong> underwent an extreemly careful active engagement process with its users prior to introducing this key.</p>
 <p>The layer concept is used as part of the dependency graph generation process. Prioritizing and guaranteeing deployments of each layer prior to commencing the next, failing fast when any layer fails to deploy.</p>
 <p><strong>Layers in Order</strong>
 1. data
@@ -1282,28 +1267,30 @@
 5. frontend</p>
 <p>While strictly not necessary to specify, if known the <code>layer</code> should be specified as it allows for accelerated parallel deployment in the desired <em>deploymentTarget</em></p>
 <h3 id="repository">repository<a class="headerlink" href="#repository" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup
-  exampleApp:
-        repository:
-            image:
-              domain: &#39;hub.docker.io&#39;
-                name: &#39;exampleRedux&#39;
-                officialImage: false
-            owner: &#39;exampleRedux&#39;
+<div class="codehilite"><pre><span></span>exampleSuite
+  exampleMicro:
+    repository:
+      image:
+        domain: &#39;hub.docker&#39;
+        name: &#39;exampleRedux&#39;
+        officialImage: false
+        owner: &#39;exampleRedux&#39;
 </pre></div>
 
 
-<p>… image registry autogenerated name uses the format: <code>repository/owner/name</code> as such the default without <code>image</code> specified would be <code>hub.docker.io/exampleGroup/exampleApp</code>.</p>
+<p>… image registry autogenerated name uses the format: <code>repository/owner/name</code> as such the default without <code>image</code> specified would be one of: 
+- <code>hub.docker/exampleSuite/exampleMicro</code> or
+- <code>hub.docker/exampleSuite/exampleMicro-exampleNano</code> if <code>nano</code> key has been provided as seen earlier in <a href="#repository">repository</a></p>
 <p>This can be overriden to anything you need in any combination using the following values:</p>
 <ul>
-<li><code>domain</code>: overrides <code>group</code> or <code>template</code> <code>domain</code> settings</li>
-<li><code>name</code>: overrides <code>exampleApp</code> in the sample. This impacts deployed application name &amp; container image repository url generation.</li>
-<li><code>officialImage</code>: is a structureal specification for <em>DockerHub</em> where official images have a different retrieval structure. Setting this as true would result in <em>exampleApp</em> being the official image name or if provided <code>name</code> would still override to be the official image name.</li>
+<li><code>domain</code>: overrides <code>suite</code> or <code>template</code> <code>domain</code> settings</li>
+<li><code>name</code>: overrides <code>exampleMicro</code> in the sample. This impacts deployed application name &amp; container image repository url generation.</li>
+<li><code>officialImage</code>: is a structureal specification for <em>DockerHub</em> where official images have a different retrieval structure. Setting this as true would result in <em>exampleMicro</em> being the official image name or if provided <code>name</code> would still override to be the official image name.</li>
 <li><code>owner</code>: override for owner in technology descriptor</li>
 </ul>
 <h3 id="resource">resource<a class="headerlink" href="#resource" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-  exampleApp:
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
     resource:
       max:
         cpu: 500
@@ -1315,7 +1302,7 @@
 </pre></div>
 
 
-<p>… allocation is an important part of all container orchestration schedullers, and these values should be provided prior to deploying Service / Application / Component to <code>production</code> <em>deploymentTarget</em> although, if not specified <strong>Cyvive.io</strong> will operate without issue.</p>
+<p>… allocation is an important part of all container orchestration schedullers, and these values should be provided prior to deploying Micro/NanoService to <code>production</code> <em>deploymentTarget</em> although, if not specified <strong>Cyvive</strong> will operate without issue.</p>
 <ul>
 <li><code>max</code> absolute maximum requirements that we are prepared to allocate.</li>
 <li><code>min</code> minimum required in order to guarantee application boot and ready for traffic interaction.</li>
@@ -1331,33 +1318,40 @@
 <li><strong>effort</strong>: can be used when the application is lowest priority of them all. <code>min</code>, <code>max</code> and <code>namespace default</code> values are totally ignored. (Currently un-implemented due to lack of user demand)</li>
 </ul>
 <h3 id="security">security<a class="headerlink" href="#security" title="Permanent link">&para;</a></h3>
-<p><em>available to closed beta customers</em></p>
-<div class="codehilite"><pre><span></span>exampleGroup:
-    exampleApp:
-        security:
-            account:
-                name: alternativeOne
-          reference: admin
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>configuration structure still stabilizing </p>
+</div>
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
+    security:
+      account:
+        name: alternativeOne
+        reference: admin
 </pre></div>
 
 
 <ul>
-<li><code>account</code>: should an account be required that isn't the group security account or 'default' i.e. another group's account. It can be overriden here. <em>Specifying will create the account if it doesn't exist</em></li>
+<li><code>account</code>: should an account be required that isn't the suite security account or 'default' i.e. another suite's account. It can be overriden here. <em>Specifying will create the account if it doesn't exist</em></li>
 </ul>
 <h3 id="stateful">stateful<a class="headerlink" href="#stateful" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-    exampleApp
-        stateful:
-            cloudNative: false
-            databaseName: &#39;&#39;
-            individualServices: false
-            replica: 3
-            sharedStorage: false
-            volume:
-                &#39;avolume&#39;:
-                    mountPath: &#39;/avolume&#39;
-                    size: &#39;10Gi&#39;
-                    storageClass: &#39;&#39;
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>configuration structure still stabilizing </p>
+</div>
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro
+    stateful:
+      cloudNative: false
+      databaseName: &#39;&#39;
+      individualServices: false
+      replica: 3
+      sharedStorage: false
+      volume:
+        &#39;avolume&#39;:
+          mountPath: &#39;/avolume&#39;
+          size: &#39;10Gi&#39;
+          storageClass: &#39;&#39;
 </pre></div>
 
 
@@ -1372,16 +1366,16 @@
 <p>In providing a consistent minimal configuration the <code>stateful</code> configuration integrates with <code>endpoint</code> and it should be used for accessing accordingly</p>
 <p>Amount of time that should be given after sending <em>kill</em> signal to the container OS before terminating and removing the container.</p>
 <h3 id="version">version<a class="headerlink" href="#version" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>exampleGroup:
-  exampleApp:
+<div class="codehilite"><pre><span></span>exampleSuite:
+  exampleMicro:
     version: &#39;latest&#39;
 </pre></div>
 
 
-<p>… standards and application is a constantly debated aproach with different internal standards used within organizations. Internally <strong>Cyvive.io</strong> maintains governance versions based on this <code>key</code> and <code>value</code>. For effective governance of infrastructure in cloud native approaches Semantic Versioning <a href="https://semver.org/">SemVer</a> is sanest choice.</p>
-<p><strong>Cyvive.io</strong>'s integration with SemVer only tracks <code>major</code> <code>minor</code> <code>patch</code> the <em>extensions format</em> is stripped off for tracking purposes.</p>
-<p>If its necessary to modify governance information, then the SevVer should be incremented to prevent cross-contamination of prior governed assets.</p>
-<p>Container images when using SemVer are <em>not</em> re-pulled from the image repository each time as they should be immuntable.</p>
+<p>… standards and application is a constantly debated aproach with different internal standards used within organizations. Internally <strong>Cyvive</strong> maintains governance versions based on this <code>key</code> and <code>value</code>. For effective governance of infrastructure in cloud native approaches Semantic Versioning <a href="https://semver.org/">SemVer</a> is sanest choice. While Micro/NanoService versioning typically is best suited to <a href="https://github.com/staltz/comver">ComVer</a></p>
+<p><strong>Cyvive</strong>'s integration with SemVer only tracks <code>major</code> <code>minor</code> <code>patch</code> the <em>extensions format</em> is stripped off for tracking purposes.</p>
+<p>If its necessary to modify governance information, then SemVer should be incremented to prevent cross-contamination of prior governed assets.</p>
+<p>Container images when using SemVer are <em>not</em> re-pulled from the image repository each time as they should and are assumed to be immutable.</p>
 <p>static labels i.e. <code>latest</code> can also be used with the understanding that configuration changes will be applied to all future <em>deploymentTarget</em> and container images will be re-pulled every time.</p>
                 
                   
@@ -1403,7 +1397,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="./" title="Application" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="./" title="MicroService" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -1412,19 +1406,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Application
+                MicroService
               </span>
             </div>
           </a>
         
         
-          <a href="groups/" title="Groups" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="templates/" title="Templates" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Groups
+                Templates
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

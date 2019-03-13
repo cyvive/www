@@ -10,6 +10,8 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
+        <meta name="description" content="Understanding Cyvive's Change Governance">
+      
       
         <link rel="canonical" href="https://www.cyvive.io/governance/">
       
@@ -40,7 +42,7 @@
     
     
       
-        <title>Understanding - Cyvive</title>
+        <title>Cyvive ~ Change Governance</title>
       
     
     
@@ -51,7 +53,7 @@
       
         
         
-        <meta name="theme-color" content="#546e7a">
+        <meta name="theme-color" content="#757575">
       
     
     
@@ -77,7 +79,7 @@
   
     
     
-    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="lime">
+    <body dir="ltr" data-md-color-primary="grey" data-md-color-accent="lime">
   
     <svg class="md-svg">
       <defs>
@@ -88,6 +90,10 @@
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#in-relation-to-cloud-native" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
     
     
       <header class="md-header" data-md-component="header">
@@ -207,19 +213,6 @@
       
         <a href="./" title="Governance" class="md-tabs__link md-tabs__link--active">
           Governance
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="../blog/itstarts.md" title="Blog" class="md-tabs__link">
-          Blog
         </a>
       
     </li>
@@ -426,10 +419,90 @@
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Understanding
+      </label>
+    
     <a href="./" title="Understanding" class="md-nav__link md-nav__link--active">
       Understanding
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-relation-to-cloud-native" title="In Relation to Cloud Native" class="md-nav__link">
+    In Relation to Cloud Native
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-governance" title="Why Governance?" class="md-nav__link">
+    Why Governance?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microservice-composition" title="MicroService Composition" class="md-nav__link">
+    MicroService Composition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-secrets-versioning" title="Configuration &amp; Secrets Versioning" class="md-nav__link">
+    Configuration &amp; Secrets Versioning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-management" title="Environment Management" class="md-nav__link">
+    Environment Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production-stability" title="Production Stability" class="md-nav__link">
+    Production Stability
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="case-for/" title="Case for Governance" class="md-nav__link">
+      Case for Governance
+    </a>
   </li>
 
         
@@ -440,13 +513,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
-    <label class="md-nav__link" for="nav-4-2">
+    <label class="md-nav__link" for="nav-4-3">
       Usage
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-2">
+      <label class="md-nav__title" for="nav-4-3">
         Usage
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -488,13 +561,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4">
     
-    <label class="md-nav__link" for="nav-4-3">
+    <label class="md-nav__link" for="nav-4-4">
       Configuration
     </label>
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
+      <label class="md-nav__title" for="nav-4-4">
         Configuration
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -506,8 +579,8 @@
 
 
   <li class="md-nav__item">
-    <a href="configuration/" title="Service" class="md-nav__link">
-      Service
+    <a href="configuration/suites/" title="Suite of Services" class="md-nav__link">
+      Suite of Services
     </a>
   </li>
 
@@ -518,8 +591,8 @@
 
 
   <li class="md-nav__item">
-    <a href="configuration/" title="Application" class="md-nav__link">
-      Application
+    <a href="configuration/" title="MicroService" class="md-nav__link">
+      MicroService
     </a>
   </li>
 
@@ -530,20 +603,8 @@
 
 
   <li class="md-nav__item">
-    <a href="configuration/" title="Component" class="md-nav__link">
-      Component
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="configuration/groups/" title="Groups" class="md-nav__link">
-      Groups
+    <a href="configuration/" title="NanoService" class="md-nav__link">
+      NanoService
     </a>
   </li>
 
@@ -570,48 +631,82 @@
   </li>
 
     
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Blog
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        Blog
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../blog/itstarts.md" title="itstarts" class="md-nav__link">
-      itstarts
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
   </ul>
 </nav>
                   </div>
                 </div>
               </div>
             
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-relation-to-cloud-native" title="In Relation to Cloud Native" class="md-nav__link">
+    In Relation to Cloud Native
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-governance" title="Why Governance?" class="md-nav__link">
+    Why Governance?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microservice-composition" title="MicroService Composition" class="md-nav__link">
+    MicroService Composition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuration-secrets-versioning" title="Configuration &amp; Secrets Versioning" class="md-nav__link">
+    Configuration &amp; Secrets Versioning
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#environment-management" title="Environment Management" class="md-nav__link">
+    Environment Management
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#production-stability" title="Production Stability" class="md-nav__link">
+    Production Stability
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
             
           
           <div class="md-content">
@@ -621,27 +716,50 @@
                 
                   <h1>Understanding</h1>
                 
-                <div class="admonition warning">
+                <h2 id="in-relation-to-cloud-native">In Relation to Cloud Native<a class="headerlink" href="#in-relation-to-cloud-native" title="Permanent link">&para;</a></h2>
+<p><a href="https://www.cncf.io/">Cloud Native Computing Foundaton (CNCF)</a>'s <em>Orchestration &amp; Management</em> and <em>Application Definition or Development</em> layers are places Kubernetes excells, but Kubernetes itself has over 50 core API's and 400+ extended API's cleverly abstracted away via Yet Another Markup Language (YAML) configuration files. For those who have used Kubernetes since the early days, there is an ingrained industry expectation that Minor revisions may contain breaking changes requiring YAML files to be updated. Especially as Beta interfaces transition to Stable. The development speed of Kubernetes ultimately means that each quarterly release requires an audit and management process of YAML files for all Kubernetes API's currently in use by the Enterprise.</p>
+<p>Such an Audit, is not a small process and often items that <em>should</em> be upgraded are delayed until next release when the old endpoints depreciate and previously working YAML files break.</p>
+<h2 id="why-governance">Why Governance?<a class="headerlink" href="#why-governance" title="Permanent link">&para;</a></h2>
+<p>For a detailed understanding of why Governance (service composition) re-surfaced in MicroService architecture see the companion page <a href="case-for/">The Case For Governance</a></p>
+<p><strong>Cyvive</strong> has, since Kubernetes 1.6.x (September 2016) offered the premier Governance Solution. In March 2017 this <strong>Universal MicroServices Language</strong> was created via partnership with 3 Universities, and over 35 industry publications. It is the most comprehensive and universalized approach to Governance offered to date.</p>
+<p>For the first time, developers can stop trying to describe what operations needs from them and align with the core business approaches of:</p>
+<ul>
+<li>ask for what you need</li>
+<li>show what your provide</li>
+</ul>
+<h3 id="microservice-composition">MicroService Composition<a class="headerlink" href="#microservice-composition" title="Permanent link">&para;</a></h3>
+<p>As MicroServices exist in Suites, its a frequent scenario that multiple MicroServices need to be updated in parallel, ensuring correct composition and assessing the total impact of services using existing API's can be a daunting task.</p>
+<p><strong>Cyvive</strong> uses a Machine Learning technique of Prioritized / Force Directed Graphs to identify and assess dependencies between deployed MicroServices. When combined with the Emerging GitOps standard to Continous Integraton, creating a new branch creates a new development namespace with all essential MicroServices deployed. Development now happens directly against real copies of production MicroServices, and multiple can be worked on simultaneously as part of the same GitOps Branch.</p>
+<p>Additionally, as <strong>Cyvive</strong> determines the order of prioritization, MicroServices are now able to be deployed rapidly layer by layer ensuring dependent services are available before the next service is deployed.</p>
+<h3 id="configuration-secrets-versioning">Configuration &amp; Secrets Versioning<a class="headerlink" href="#configuration-secrets-versioning" title="Permanent link">&para;</a></h3>
+<p>While 12Factor specifies that application configuration should be entirely through Environmental Variables, their population must be managed. In an Agnostic Cloud view, the safest place for configuration management is in Git as part of the emerging GitOps approach.</p>
+<p><strong>Cyvive</strong> builds on this approach, by utilizing Zero Trust Secrets, and tiers of Configuration Management. Whenever a change happens to the original Git repository, Cyvive versions the new configuration and manages its promotion through the cluster, incrementally rolling it out until prooven that the new configuration is safe for production consumption.</p>
+<h3 id="environment-management">Environment Management<a class="headerlink" href="#environment-management" title="Permanent link">&para;</a></h3>
+<p>Every Enterprise has several environment types. With the benefit of Kubernetes the prior physical environments are now logical via NameSpaces. But environmental permutations are also simpler increasing risk that environments may drift from their desired configuration.</p>
+<p><strong>Cyvive</strong> has four Core <strong>Operating Environment</strong> Technology Descriptors: </p>
+<ul>
+<li>development</li>
+<li>high availability</li>
+<li>performance</li>
+<li>production</li>
+</ul>
+<p>Any number of NameSpaces can be populated from these core descriptors, each maintaning independent versioning and state of currently deployed applications additionally respecting MicroService Composition, configuration and secret versions.</p>
+<p>Additionally configuration follows a prioritization based approach where configuration can be overriden and inherited as required:</p>
+<ol>
+<li>Environment</li>
+<li>Suite / Group</li>
+<li>MicroService</li>
+<li>Function</li>
+</ol>
+<h3 id="production-stability">Production Stability<a class="headerlink" href="#production-stability" title="Permanent link">&para;</a></h3>
+<p>This <strong>Universal MicroService Language</strong> enables an unprecidented portability and co-ordination between Kubernetes clusters and workloads. It also, by default enables <strong>Continous Deployment / Promotion</strong> where each container is now a <em>production candidate</em> pushed through more complex environments until proven safe to run in production.</p>
+<p><strong>Cyvive</strong> utilises <em>Shadow Traffic Replication</em> between the Production and Performance (names able to be changed to match internal standards) environments as the final validation of application stability.</p>
+<p>Additionally, this flexibility allows <strong>Cyvive</strong> to be Cloud Agnostic, in that <em>Premptive Instances</em> can be effectively used for scaling workloads and indeed the entire company's infrastructure can be migrated to whichever public cloud provides the best price for the current hour of <em>Premptive Instance</em> lease.</p>
+<p>When an architecture is introduced, its necessary for <strong>governance</strong> to also co-habitiate to ensure that the software solutions within an organization adhere to the defined policies, guidelines, and standards that are defined as a function of the objectives, strategies, and regulations applied in the organization.</p>
+<div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>This functionality was originally offered by the parent company as a separate product <strong>Fathomable</strong>. It is undergoing consolidation into <strong>Cyvive</strong>'s core and is restricted to <em>beta</em> customers at this time. Please contact your account manager via live-chat should you wish to participate.</p>
 </div>
-<p>Applications / Services / Components / Functions are all descriptors for various complexity and integration levels of code. While each could exist in isolation, more often than not an <em>architectural</em> approach is selected for logical separation of business processes both internal and external.</p>
-<p>When an architecture is introduced, its necessary for <strong>governance</strong> to also co-habitiate to ensure that the software solutions within an organization adhere to the defined policies, guidelines, and standards that are defined as a function of the objectives, strategies, and regulations applied in the organization.</p>
-<p>The challenge lies around development velocity and ironically management of <strong>governance</strong> itself as companies progress through the technology layers defined in the <a href="http://www.opengroup.org/soa/source-book/osimmv2/p2.htm">OSIMM V2 Model</a>. Specifically Layers 4 - 7 where each technological progression results in exponentially exploding the number of managed code assets.</p>
-<p><strong>Cyvive.io</strong> is a Solution Oriented Infrastructure technology capable of operating at Layer 4 - 7 though governance via policy. It is:</p>
-<ul>
-<li><strong>cloud agnostic</strong></li>
-<li><strong>container orchestrator independent</strong></li>
-<li><strong>Don't Repeat Yourself (DRY)</strong></li>
-<li><strong>Capable of Managing / Deploying entire companies / business units / applications</strong></li>
-<li><strong>Dependency Management Aware</strong></li>
-<li><strong>Cloud Function Ready</strong></li>
-<li><strong>12 Factor Compliant</strong></li>
-<li><strong>Developmer &amp; Governance Friendly</strong></li>
-<li><strong>Extensible</strong></li>
-<li><strong>Highly Flexible</strong></li>
-<li><strong>Academically; Enterprise &amp; Startup compatible</strong></li>
-</ul>
                 
                   
                 
@@ -677,13 +795,13 @@
           </a>
         
         
-          <a href="usage/developer/" title="Developer" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="case-for/" title="Case for Governance" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Developer
+                Case for Governance
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

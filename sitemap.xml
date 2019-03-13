@@ -36,6 +36,11 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
+     <loc>https://www.cyvive.io/governance/case-for/</loc>
+     <lastmod>1970-01-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
      <loc>https://www.cyvive.io/governance/usage/developer/</loc>
      <lastmod>1970-01-01</lastmod>
      <changefreq>daily</changefreq>
@@ -46,7 +51,7 @@
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>https://www.cyvive.io/governance/configuration/</loc>
+     <loc>https://www.cyvive.io/governance/configuration/suites/</loc>
      <lastmod>1970-01-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -57,22 +62,12 @@
     </url>
     <url>
      <loc>https://www.cyvive.io/governance/configuration/</loc>
-     <lastmod>1970-01-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc>https://www.cyvive.io/governance/configuration/groups/</loc>
      <lastmod>1970-01-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
      <loc>https://www.cyvive.io/governance/configuration/templates/</loc>
      <lastmod>1970-01-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-    <url>
-     <loc></loc>
-     
      <changefreq>daily</changefreq>
     </url>
 </urlset>
