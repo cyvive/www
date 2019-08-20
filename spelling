@@ -1,0 +1,2 @@
+npm i yaspeller write-good
+./node_modules/.bin/yaspeller --dictionary spelling.json -e ".md" docs

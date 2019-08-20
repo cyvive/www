@@ -35,6 +35,7 @@ pages:
     - 'Platform': 'platform/index.md'
     - 'EcoSystem': 'ecosystem/index.md'
     - 'Governance': 'governance/index.md'
+    - 'Terms & Conditions': 'license.md'
   - 'Platform':
     - 'Understanding': 'platform/index.md'
   - 'EcoSystem':
