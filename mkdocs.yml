@@ -1,9 +1,9 @@
-site_name: Cyvive
+site_name: Cyvive <b>any</b> Cloud
 site_descripiton: Immutable Change
-site_author: cyvive.io
-site_url: https://www.cyvive.io
+site_author: cyvive.com
+site_url: https://www.cyvive.com
 
-copyright: '&copy; Taylored Technology 2018-Current'
+copyright: '&copy; Taylored Technology 2017-Current'
 theme:
   name: 'material'
   language: 'en'
@@ -29,30 +29,47 @@ markdown_extensions:
 extra_javascript:
   - 'javascripts/extra.js'
 
-pages:
-  - 'About': 
-    - 'Cyvive': 'index.md'
-    - 'Platform': 'platform/index.md'
-    - 'EcoSystem': 'ecosystem/index.md'
-    - 'Governance': 'governance/index.md'
+nav:
+  - 'Why Cyvive?':
+    - 'Why Cyvive?': 'index.md'
+    # - 'Solutions': 'solutions/index.md'
+    - 'Architecture':
+      - 'Overview': 'architecture/index.md'
+      - 'Cirro': 'architecture/cirro.md'
+      - 'Culumo': 'architecture/culumo.md'
+      - 'Strato': 'architecture/strato.md'
+      - 'Nimbo': 'architecture/nimbo.md'
+    # - 'Pricing': 'pricing.md'
+    - 'Resources':
+      - 'EcoSystem': 'resources/ecosystem.md'
+      - 'FAQ': 'resources/faq/index.md'
+      - 'Foggy Ubiquity': 'http://www.foggyubiquity.com/language'
+      # - 'Getting Started': 'resources/operation/index.md'
+      - 'Support': 'resources/support.md'
     - 'Terms & Conditions': 'license.md'
-  - 'Platform':
-    - 'Understanding': 'platform/index.md'
-  - 'EcoSystem':
-    - 'Understanding': 'ecosystem/index.md'
-  - 'Governance':
-    - 'Understanding': 'governance/index.md'
-    - 'Case for Governance': 'governance/case-for.md'
-    - 'Usage':
-      - 'Developer': 'governance/usage/developer.md'
-      - 'Govenor': 'governance/usage/govenor.md'
-    - 'Configuration':
-      - 'Suite of Services': 'governance/configuration/suites.md'
-      - 'MicroService': 'governance/configuration/index.md'
-      - 'NanoService': 'governance/configuration/index.md'
-      - 'Templates': 'governance/configuration/templates.md'
-        #  - 'Blog':
-        #- 'itstarts': 'blog/itstarts.md'
-
-
-
+  # - 'Solutions':
+  #   - 'Overview': 'solutions/index.md'
+    # - 'Immutability': 'solutions/immutability.md'
+    # - 'Change Control': 'solutions/change-control.md'
+    # - 'Disaster Recovery': 'solutions/disaster-recovery.md'
+    # - 'Sandbox Environments': 'solutions/sandbox-environments.md'
+    # - 'Isolation': 'solutions/isolation.md'
+    # - 'Kubernetes': 'solutions/kubernetes.md'
+  - 'Architecture':
+    - 'Overview': 'architecture/index.md'
+    - 'Cirro': 'architecture/cirro.md'
+    - 'Culumo': 'architecture/culumo.md'
+    - 'Strato': 'architecture/strato.md'
+    - 'Nimbo': 'architecture/nimbo.md'
+  - 'Pricing': 'pricing.md'
+  - 'Resources':
+    # - 'Getting Started':
+    #   - 'Developer': 'resources/operation/developer.md'
+    #   - 'Govenor': 'resources/operation/govenor.md'
+    #   - 'Install': 'resources/operation/installing.md'
+    # - 'Whitepapers': 'resources/white-papers/index.md'
+    # - 'Case Study': 'resources/case-study/index.md'
+    - 'Foggy Ubiquity': 'http://www.foggyubiquity.com/language'
+    - 'EcoSystem': 'resources/ecosystem.md'
+    - 'FAQ': 'resources/faq/index.md'
+    - 'Support': 'resources/support.md'

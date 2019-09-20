@@ -1,0 +1,31 @@
+# EditorConfig configuration for nix
+# http://EditorConfig.org
+
+root = true
+
+[*]
+indent_style = tab
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{json,yml,yaml,njk}]
+indent_style = space
+indent_size = 2
+
+[*.{md}]
+trim_trailing_whitespace = false
+
+[*.nix]
+indent_style = space
+indent_size = 2
+
+[*.{hpp,cc,hh,sh,pl}]
+indent_style = space
+indent_size = 4
+
+[*.{diff,patch}]
+trim_trailing_whitespace = false
+

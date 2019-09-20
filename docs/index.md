@@ -1,4 +1,4 @@
-title: Cyvive
+title: Cyvive **any** Cloud
 description: Cloud Agnostic Operation & Governance Platform
 
 ## 60 Second Overview
@@ -10,70 +10,51 @@ description: Cloud Agnostic Operation & Governance Platform
 
 ## Why?
 
-The modern Information Technology Development Approach is based on **Speed, Scale & Margin**. As a result organizations of all sizes are embracing the **Cloud Native** approach to designing, building and running applications based on Infrastructure-as-a-Service (IaaS) in combination with operational tools and services such as Continous Integration (CI), Continous Deployment (CD), Containers, and Orchestrators. 
+Convenience. Software development has been undergoing a mass exodus from Monolithic Architecture towards MicroServices since 2009. There are excellent reasons to do so. Such as
 
-To execute **Cloud Native** five layers are required:
+- _Inner outer_ architecture
+- _shadow traffic_
+- or protection of brand damage when defects escape into production.
 
-1. Infrastructure (Bare Metal / Cloud)
-2. Provisioning
-3. Runtme
-4. Orchestration & Management
-5. Application Definition / Development
+Such convenience results in exponential scaling of complexity while simultaneously translating what was previously internal dependencies into external guarantees.
 
-This simplistic layering opens a world of choices, when combined with the reality that some tools in one layer work better with specific tools than others, a complex exponential selection process is established.
+![zoomify](https://res.cloudinary.com/tayloredtechnology/image/upload/f_auto,q_auto/v1568665654/cyvive.io/microservice-communication.png){.center}
 
-There is a strong market need for simplicity, sanity and control of the n+1 choices available when using **Cloud Native** architecture.
+At even 50 to 100 MicroServices, It is **no longer** realistic for humans to manage operations, updates, data synchronization & configuration. So we turn to technology stacks such as Kubernetes to assist, yet they are as complex if not more so than most MicroService stacks.
 
+Cyvive as an **Operational Platform** simplifies this web of entanglement. One interface, full dependency & life-cycle management in any Kubernetes cluster on any cloud or bare metal technology.
+
+Manage one, hundreds, or federated multi-cloud cluster with built-in disaster resilience for your MicroServices. Better yet, run Kubernetes direct on your own metal at over 2,500 nodes safely, or multi-mesh production clusters securely. Even extend your operations from Cloud Computing to Edge Computing and beyond into Fog Computing anywhere in the world from a single control plane. Its all part of Cyvive's standard modus operandi. Allowing you to:
+
+> Cyvive the Cloud via Immutable Change
 
 ## What?
 
-Cyvive, simply is **Immutable Change**, applied through all **Cloud Native** layers and beyond. This means your business, or parts of it can be reproduced, moved or upgraded safely. Cyvive enables this through: 
+Cyvive, simply is **Immutable Change**, applied through all **Cloud Native** layers and beyond. This means your business, or parts of it can be reproduced, moved or upgraded safely. Cyvive enables this through:
 
 ### Immutable Operational Platform
 
-Infrastructure-as-a-Service, expects the cloud service provider to deliver infrastructure components that would otherwise exist in an on-premises data center. These components could consist of servers, storage and networking as well as the virtualization layer, which the (Cloud Service Provider CSP) IaaS provider hosts in its own data center. While they may also provide Platform-as-a-Service (PaaS) offerings such as cloud functions, container execution api's, or even Kubernetes variations. By design, they are not turn-key offerings.
+Infrastructure-as-a-Service, expects the cloud service provider to deliver infrastructure components that would otherwise exist in an on-premises data center. These components could consist of servers, storage and networking as well as the virtualization layer, which the (Cloud Service Provider CSP) IaaS provider hosts in its own data center. While they may also provide Platform-as-a-Service (PaaS) offerings such as cloud functions, container execution API's, or even Kubernetes variations. By design, they are not turn-key offerings.
 
 **Cyvive**, however, is. As an operational platform, it directly interfaces with the cloud provider (or Bare Metal) of choice using the provides IaaS interactions to provision an immutable collection of components necessary to run the orchestrator of choice. The default being Kubernetes
 
-### Governance
+### Autonomic Governance
 
-MicroServices are a suite of applications providing a specific function. They are also a key part of **Cloud Native** architecture, and while there are many benefits to adopting this model over alternatives such as OSIMM / TOSCA. Orchestration & Management alone is insufficient and inefficient to managing complex deployments as each has independent release cycles.
-
-The defacto approach to MicroServices is to run them within a container, in most situations, even the _functions / serverless_ approach ultimately runs within a container. As such to actually execute the code, open source and propriatory libraries (which are regularly updated) are aggregated into the container, where to comply with security and zero day vulnerability patching must be updated regularly.
-
-Ironically, 50 MicroServices are often the tipping point for unmanagable complexity. 50 MicroServices can have a maximum of 1225 interactions, versions, and dependencies between eachother. It is also a realistic expectation that at least one of the Open Source libraries used in each MicroService will need to be updated, tested and validated as production safe every couple of days. Potentially 700 redeploys a month.
-
-While the Continous Integration System may validate the code is safe, by nature MicroServices require Continous Deployment / Promotion through environmental complexity to _proove_ they are production stable. 
-MicroServices also have their own independent dependency graph, so actual deployments may not be as simple as replacing a single service in isolation each time.
-
-**Cyvive**, as the Premier MicroService Governance solution, streamlines all complexities through dynamic dependency graphs, an industry standard configuration & communication syntax, release management, configuration and version management for MicroServices through to Infrastructure. 
+**Cyvive**, streamlines all complexities through dynamic dependency graphs, an industry standard configuration & communication syntax, release management, configuration and version management for MicroServices through to Infrastructure.
 
 Any part of your infrastructure can be deployed on-demand, with all relevant dependent services, in any environment.
 
-### EcoSystem
-
-**Cloud Native** requires a collection of tools, or an extended ecosystem of services to understand and, unlock and leverage its full potential. Each tool, when selected by companies typically goes through a process, that takes months for an efficient team with multitudes of Proof of Concepts, each potentially causing *back to the drawing board moments*. The modern company doesn't have the luxury of time to assess, stabilize and incrementally add each component of the **Cloud Native** ecosystem while guaranteeing stability amongst change management in their Digital Transformation journey.
-
-**Cyvive** takes the best in breed tool for each part of the EcoSystem and manages its lifecycle. Choices are available between Open Source or Propriatory where possible. Such careful selection and management of the Best in Breed Candidates of the EcoSystem unlocks the power of the Orchestrator to perform often significantly beyond its standard capabilities
-
-### Cloud Agnostic
-
-It is no longer a realistic expectation that companies can enhance their technology stack by partnering with a single cloud provider. With the growing multitude of high quality cloud providers, each offering niche tools a multi-cloud strategy is a necessity.
-
-**Cyvive**'s detailed Governance and Operational Capabilities allow rapid movement of workloads between cloud providers at an unprecidented scale. It is now a realistic expectation that every hour your entire company can be migrated between clouds based on lowest instance pricing. Without disruption of service.
-
-
 ## How?
 
-We worked with 3 Universities, and over 35 industry publications to analyse trends and approaches to modelling, scaling, interacting and managing MicroService deployents at diabolical scale. The result is the core configuration language of **Cyvive**, a direct extension of natural descriptive language used in companies today.
+We worked with 3 Universities, and over 35 industry publications to analyse trends and approaches to modelling, scaling, interacting and managing MicroService deployments at diabolical scale. The result was the release of [**The Language of the Fog**](http://www.foggyubiquity.com/language) the core configuration language of **Cyvive**, a direct extension of natural descriptive language used in companies today.
 
-We also cross partnered to understand and explore each part of the **Cloud Native** EcoSystem to architect and craft a well-balanced blend of services capable of supporting over 2,500 nodes with 500 containers each. (Yes, Cyvive has been applied to managing over 1 million containers) 
+We also cross partnered to understand and explore each part of the **Cloud Native** EcoSystem to architect and craft a well-balanced blend of services capable of supporting over 2,500 nodes with 500 containers each. (Yes, Cyvive has been applied to managing over 1 million containers)
 
 We pushed _immutability_ down to the operating system, every machine self registers, and is managed exclusively by **Cyvive**. There is no human access available to the actual machine. Making **Cyvive** inaccessible to human error.
 
-While **Cyvive** is orchestrator independent, it has been actively used with Kubernetes since version 1.6.x (March 2017)
+### Production Ready
 
-Finally, we selected Terraform for cloud provider & bare metal interactions. Properly tuned, full _immutable_ lifecyle management was possible while leveraging all the important functionalities of major cloud providers.
+While **Cyvive** is orchestrator independent, it has been actively used with Kubernetes since version 1.6.x (March 2017)
 
 ## Where?
 
@@ -81,4 +62,4 @@ Finally, we selected Terraform for cloud provider & bare metal interactions. Pro
 - AMD64 / ARM64 Chipsets
 - Bare Metal (**Cyvive** creates its own cloud on metal)
 
-**Cyvive**: The Premier Cloud Agnostic Operation & Governance Platform
+**Cyvive**: The Premier Cloud Agnostic Operation & Governance Platform, or simply _Immutable Change_
